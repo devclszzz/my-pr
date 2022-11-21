@@ -5683,7 +5683,22 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
+  - name: 🤮douyin
+      type: select
+      proxies:
+        - 🎯 全球直连
+        - REJECT
+        - 🚀 节点选择
+        - 🔯 故障转移
+        - ♻️ 自动选择
+  - name: 🤮kuaishou
+    type: select
+    proxies:
+      - 🎯 全球直连
       - REJECT
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🎵 Tiktok
     type: select
     proxies:
@@ -5791,6 +5806,18 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
     interval: 3600
+  douyin:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/douyin.yaml"
+    path: ./ruleset/douyin.yaml
+    interval: 60
+  kuaishou:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/kuaishou.yaml"
+    path: ./ruleset/kuaishou.yaml
+    interval: 60
   tiktok:
     type: http
     behavior: classical
@@ -5826,24 +5853,6 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/us.yaml"
     path: ./ruleset/hk.yaml
-    interval: 60
-  media:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/media.yaml"
-    path: ./ruleset/media.yaml
-    interval: 60
-  kuaishou:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/kuaishou.yaml"
-    path: ./ruleset/kuaishou.yaml
-    interval: 60
-  douyin:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/douyin.yaml"
-    path: ./ruleset/douyin.yaml
     interval: 60
   apple:
     type: http
@@ -5920,6 +5929,8 @@ rules:
   - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,porn,😍Porn
+  - RULE-SET,douyin,🤮douyin
+  - RULE-SET,kuaishou,🤮kuaishou
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
