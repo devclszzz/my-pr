@@ -5684,13 +5684,13 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
   - name: 🤮douyin
-      type: select
-      proxies:
-        - 🎯 全球直连
-        - REJECT
-        - 🚀 节点选择
-        - 🔯 故障转移
-        - ♻️ 自动选择
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - REJECT
+      - 🚀 节点选择
+      - 🔯 故障转移
+      - ♻️ 自动选择
   - name: 🤮kuaishou
     type: select
     proxies:
