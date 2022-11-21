@@ -5576,14 +5576,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
   - name: 🎵 Tiktok
     type: select
     proxies:
@@ -5616,14 +5608,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -5631,13 +5615,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
       - 🇺🇸 美国
   - name: 🐟 漏网之鱼
     type: select
@@ -5646,14 +5623,6 @@ proxy-groups:
       - 🎯 全球直连
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
 rule-providers:
   host:
     type: http
