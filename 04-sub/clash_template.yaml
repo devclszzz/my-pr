@@ -5557,14 +5557,6 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🔯 故障转移
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
       - DIRECT
   - name: 🔯 故障转移
     type: fallback
