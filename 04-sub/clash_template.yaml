@@ -5576,30 +5576,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🔯 故障转移
       - ♻️ 自动选择
-  - name: 🎵 Tiktok
-    type: select
-    proxies:
-      - 🇺🇸 美国
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - REJECT
-      - 🎯 全球直连
-  - name: 📺 Netflix
-    type: select
-    proxies:
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - REJECT
-      - 🎯 全球直连
   - name: 😍Porn
     type: select
     proxies:
@@ -5615,7 +5591,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇺🇸 美国
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -5726,8 +5701,6 @@ rules:
   - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,porn,😍Porn
-  - RULE-SET,tiktok,🎵 Tiktok
-  - RULE-SET,nf,📺 Netflix
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,gfw,🚀 节点选择
