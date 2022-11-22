@@ -26,7 +26,6 @@ dns:
     - https://1.12.12.12/dns-query
     - https://120.53.53.53/dns-query
   fallback:
-    - https://dns.nextdns.io/1936a7/dns-query
     - https://hk-hkg.doh.sb/dns-query
     - https://8.8.8.8/dns-query
     - https://8.8.4.4/dns-query
