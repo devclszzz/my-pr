@@ -41172,10 +41172,10 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: select
     proxies:
-      - 🇺🇸 美国
-      - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇭🇰 香港
       - 🚀 节点选择
       - 🔯 故障转移
       - ♻️ 自动选择
