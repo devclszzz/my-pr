@@ -41036,40 +41036,47 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - DIRECT
+  - name: ♻️ 自动选择
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    proxies:
+      - 🇭🇰 香港(AUTO)
+      - 🇯🇵 日本(AUTO)
+      - 🇸🇬 新加坡(AUTO)
+      - 🇺🇸 美国(AUTO)
   - name: 🔯 故障转移
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies: [ ]
-  - name: ♻️ 自动选择
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 300
-    tolerance: 50
-    proxies: [ ]
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 60
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🇯🇵 日本(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 60
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🇸🇬 新加坡(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 60
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🇺🇸 美国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    tolerance: 50
+    interval: 60
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🇭🇰 香港
     type: fallback
