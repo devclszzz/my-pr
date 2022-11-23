@@ -14,8 +14,8 @@ dns:
   enable: true
   ipv6: false
   default-nameserver:
-    - 114.114.114.114
     - 8.8.8.8
+    - 114.114.114.114
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -26,6 +26,7 @@ dns:
     - https://1.12.12.12/dns-query
     - https://120.53.53.53/dns-query
   fallback:
+    - https://dns.nextdns.io/1936a7/dns-query
     - https://hk-hkg.doh.sb/dns-query
     - https://8.8.8.8/dns-query
     - https://8.8.4.4/dns-query
