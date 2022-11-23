@@ -41026,7 +41026,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🔯 故障转移
-      - DIRECT
+      - 🎯 全球直连
   - name: 🔯 故障转移
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41044,30 +41044,17 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔯 故障转移
       - ♻️ 自动选择
-  - name: 😍Porn
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - REJECT
-      - 🎯 全球直连
       - 🔯 故障转移
-      - ♻️ 自动选择
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
-      - ♻️ 自动选择
 rule-providers:
   host:
     type: http

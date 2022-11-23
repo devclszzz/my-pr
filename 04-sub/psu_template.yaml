@@ -41035,7 +41035,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - DIRECT
+      - 🎯 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41103,8 +41103,8 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🔯 故障转移
       - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41113,102 +41113,61 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-  - name: 😀Allow-CN
+  - name: 🎵 Douyin
     type: select
-    proxies:
-      - 🎯 全球直连
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - REJECT
-  - name: 😀Allow-US
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - REJECT
-  - name: 🤮Reject-DIY
-    type: select
-    proxies:
-      - REJECT
-      - 🚀 节点选择
-      - 🎯 全球直连
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-  - name: 🤮douyin
-    type: select
+    url: http://1.1.1.1/generate_204
     proxies:
       - 🎯 全球直连
       - REJECT
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
-  - name: 🤮kuaishou
+  - name: 🎵 Kuaishou
     type: select
+    url: http://1.1.1.1/generate_204
     proxies:
       - 🎯 全球直连
       - REJECT
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
   - name: 🎵 Tiktok
     type: select
+    url: http://1.1.1.1/generate_204
     proxies:
-      - 🇯🇵 日本
+      - 🚩 日-新-美-香
+      - 🚩 新-日-美-香
       - 🇸🇬 新加坡
+      - 🇯🇵 日本
       - 🇺🇸 美国
       - 🇭🇰 香港
+      - 🇯🇵 日本(AUTO)
+      - 🇸🇬 新加坡(AUTO)
+      - 🇺🇸 美国(AUTO)
+      - 🇭🇰 香港(AUTO)
       - 🚀 节点选择
-      - 🔯 故障转移
       - ♻️ 自动选择
+      - 🔯 故障转移
       - REJECT
-      - 🎯 全球直连
   - name: 📺 Netflix
     type: select
     proxies:
+      - 🚩 新-日-美-香
+      - 🚩 日-新-美-香
       - 🇸🇬 新加坡
+      - 🇯🇵 日本
       - 🇺🇸 美国
       - 🇭🇰 香港
-      - 🇯🇵 日本
+      - 🇯🇵 日本(AUTO)
+      - 🇸🇬 新加坡(AUTO)
+      - 🇺🇸 美国(AUTO)
+      - 🇭🇰 香港(AUTO)
       - 🚀 节点选择
-      - 🔯 故障转移
       - ♻️ 自动选择
+      - 🔯 故障转移
       - REJECT
-      - 🎯 全球直连
-  - name: 😍Porn
-    type: select
+  - name: 🈲 Porn
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 60
     proxies:
       - 🚀 节点选择
-      - REJECT
-      - 🎯 全球直连
-      - 🔯 故障转移
       - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41217,36 +41176,34 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
+      - REJECT
+  - name: 🚩 新-日-美-香
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 60
+    proxies:
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇺🇸 美国
+      - 🇭🇰 香港
+  - name: 🚩 日-新-美-香
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 60
+    proxies:
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - 🇭🇰 香港
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🚀 节点选择
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🔯 故障转移
-      - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
 rule-providers:
   allow-cn:
     type: http
@@ -41401,18 +41358,18 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
-  - RULE-SET,allow-cn,😀Allow-CN
-  - RULE-SET,allow-us,😀Allow-US
+  - RULE-SET,allow-cn,🎯 全球直连
+  - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
-  - RULE-SET,reject-diy,🤮Reject-DIY
+  - RULE-SET,reject-diy,REJECT
   - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,porn,😍Porn
-  - RULE-SET,douyin,🤮douyin
-  - RULE-SET,kuaishou,🤮kuaishou
+  - RULE-SET,porn,🈲 Porn
+  - RULE-SET,douyin,🎵 Douyin
+  - RULE-SET,kuaishou,🎵 Kuaishou
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
   - RULE-SET,apple,🍎 苹果服务
