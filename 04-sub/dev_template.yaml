@@ -41036,7 +41036,8 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    tolerance: 100
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
