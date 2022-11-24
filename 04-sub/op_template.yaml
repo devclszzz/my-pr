@@ -41345,6 +41345,12 @@ rule-providers:
     url: "http://192.168.88.251:56680/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
     interval: 3600
+  download:
+    type: http
+    behavior: classical
+    url: "http://192.168.88.251:56680/01-rule/download.yaml"
+    path: ./ruleset/download.yaml
+    interval: 3600
   douyin:
     type: http
     behavior: classical
@@ -41448,6 +41454,7 @@ rules:
   - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,porn,🈲 Porn
+  - RULE-SET,download,⏬ 下载节点
   - RULE-SET,douyin,🎵 Douyin
   - RULE-SET,kuaishou,🎵 Kuaishou
   - RULE-SET,tiktok,🎵 Tiktok

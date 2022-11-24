@@ -41288,133 +41288,139 @@ rule-providers:
   allow-cn:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/allow-cn.yaml"
+    url: "http://192.168.88.251:56680/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
     interval: 60
   allow-us:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/allow-us.yaml"
+    url: "http://192.168.88.251:56680/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
     interval: 60
   hk:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/hk.yaml"
+    url: "http://192.168.88.251:56680/01-rule/hk.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   jp:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/jp.yaml"
+    url: "http://192.168.88.251:56680/01-rule/jp.yaml"
     path: ./ruleset/jp.yaml
     interval: 60
   sg:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/sg.yaml"
+    url: "http://192.168.88.251:56680/01-rule/sg.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   us:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/us.yaml"
+    url: "http://192.168.88.251:56680/01-rule/us.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   reject-diy:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/reject-diy.yaml"
+    url: "http://192.168.88.251:56680/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
   host:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/host.yaml"
+    url: "http://192.168.88.251:56680/01-rule/host.yaml"
     path: ./ruleset/host.yaml
     interval: 3600
   reject:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/reject.yaml"
+    url: "http://192.168.88.251:56680/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
     interval: 3600
   porn:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/porn.yaml"
+    url: "http://192.168.88.251:56680/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
+    interval: 3600
+  download:
+    type: http
+    behavior: classical
+    url: "http://192.168.88.251:56680/01-rule/download.yaml"
+    path: ./ruleset/download.yaml
     interval: 3600
   douyin:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/douyin.yaml"
+    url: "http://192.168.88.251:56680/01-rule/douyin.yaml"
     path: ./ruleset/douyin.yaml
     interval: 60
   kuaishou:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/kuaishou.yaml"
+    url: "http://192.168.88.251:56680/01-rule/kuaishou.yaml"
     path: ./ruleset/kuaishou.yaml
     interval: 60
   tiktok:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/tiktok.yaml"
+    url: "http://192.168.88.251:56680/01-rule/tiktok.yaml"
     path: ./ruleset/tiktok.yaml
     interval: 60
   nf:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/nf.yaml"
+    url: "http://192.168.88.251:56680/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 60
   apple:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/apple.yaml"
+    url: "http://192.168.88.251:56680/01-rule/apple.yaml"
     path: ./ruleset/apple.yaml
     interval: 3600
   icloud:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/icloud.yaml"
+    url: "http://192.168.88.251:56680/01-rule/icloud.yaml"
     path: ./ruleset/icloud.yaml
     interval: 3600
   gfw:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/gfw.yaml"
+    url: "http://192.168.88.251:56680/01-rule/gfw.yaml"
     path: ./ruleset/gfw.yaml
     interval: 3600
   greatfire:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/greatfire.yaml"
+    url: "http://192.168.88.251:56680/01-rule/greatfire.yaml"
     path: ./ruleset/greatfire.yaml
     interval: 3600
   proxy:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/proxy.yaml"
+    url: "http://192.168.88.251:56680/01-rule/proxy.yaml"
     path: ./ruleset/proxy.yaml
     interval: 3600
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/lancidr.yaml"
+    url: "http://192.168.88.251:56680/01-rule/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 3600
   private:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/private.yaml"
+    url: "http://192.168.88.251:56680/01-rule/private.yaml"
     path: ./ruleset/private.yaml
     interval: 3600
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/cncidr.yaml"
+    url: "http://192.168.88.251:56680/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
 rules:
@@ -41448,6 +41454,7 @@ rules:
   - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,porn,🈲 Porn
+  - RULE-SET,download,⏬ 下载节点
   - RULE-SET,douyin,🎵 Douyin
   - RULE-SET,kuaishou,🎵 Kuaishou
   - RULE-SET,tiktok,🎵 Tiktok
