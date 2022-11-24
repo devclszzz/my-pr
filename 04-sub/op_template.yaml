@@ -41027,6 +41027,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🔯 故障转移
+      - ⚡ 最快节点
       - 🚩 香-日-新-美(AUTO)
       - 🚩 日-新-美-香(AUTO)
       - 🚩 新-日-美-香(AUTO)
@@ -41048,12 +41049,14 @@ proxy-groups:
     interval: 300
     proxies:
       - 🚩 香-日-新-美(AUTO)
+      - ⚡ 最快节点
   - name: 🔯 故障转移
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies:
       - 🚩 香-日-新-美
+      - ⚡ 最快节点
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -41205,6 +41208,7 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
+      - ⚡ 最快节点
   - name: 🚩 新-日-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41214,6 +41218,7 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
+      - ⚡ 最快节点
   - name: 🚩 日-新-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41223,6 +41228,7 @@ proxy-groups:
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
+      - ⚡ 最快节点
   - name: 🚩 香-日-新-美
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41250,6 +41256,17 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - 🇭🇰 香港
+  - name: ⚡ 最快节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 60
+    lazy: false
+    tolerance: 150
+    proxies:
+      - 🇭🇰 香港(AUTO)
+      - 🇯🇵 日本(AUTO)
+      - 🇸🇬 新加坡(AUTO)
+      - 🇺🇸 美国(AUTO)
   - name: 🎯 全球直连
     type: select
     proxies:
