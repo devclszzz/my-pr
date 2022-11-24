@@ -41112,8 +41112,7 @@ proxy-groups:
     interval: 60
     lazy: false
     tolerance: 150
-    proxies:
-      - REJECT
+    proxies: [ ]
   - name: 🍎 苹果服务
     type: select
     proxies:
