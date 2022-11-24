@@ -41105,6 +41105,14 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies: [ ]
+  - name: ⏬ 下载节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 60
+    lazy: false
+    tolerance: 150
+    proxies:
+      - REJECT
   - name: 🍎 苹果服务
     type: select
     proxies:
