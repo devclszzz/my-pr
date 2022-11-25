@@ -41030,12 +41030,12 @@ proxy-groups:
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41044,13 +41044,13 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 300
     proxies:
-      - 🚩 香-日-新-美(AUTO)
+      - 🇭🇰 香-日-新-美(AUTO)
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -41059,7 +41059,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies:
-      - 🚩 香-日-新-美
+      - 🇭🇰 香-日-新-美
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -41137,18 +41137,18 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🔯 故障转移
       - ⏬ 下载节点
       - 🚑 备用节点
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41162,21 +41162,21 @@ proxy-groups:
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - REJECT
   - name: 🎵 Kuaishou
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - REJECT
   - name: 🎵 Tiktok
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
-      - 🚩 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
+      - 🇭🇰 香-日-新-美
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🇸🇬 新加坡
@@ -41194,9 +41194,9 @@ proxy-groups:
   - name: 📺 Netflix
     type: select
     proxies:
-      - 🚩 新-日-美-香
-      - 🚩 日-新-美-香
-      - 🚩 香-日-新-美
+      - 🇸🇬 新-日-美-香
+      - 🇯🇵 新-日-美-香
+      - 🇭🇰 香-日-新-美
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🇸🇬 新加坡
@@ -41215,12 +41215,12 @@ proxy-groups:
     type: select
     proxies:
       - REJECT
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🚀 节点选择
@@ -41234,7 +41234,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-  - name: 🚩 香-日-新-美(AUTO)
+  - name: 🇭🇰 香-日-新-美(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41244,7 +41244,7 @@ proxy-groups:
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 新-日-美-香(AUTO)
+  - name: 🇸🇬 新-日-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41254,7 +41254,7 @@ proxy-groups:
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 日-新-美-香(AUTO)
+  - name: 🇯🇵 新-日-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41264,7 +41264,7 @@ proxy-groups:
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 香-日-新-美
+  - name: 🇭🇰 香-日-新-美
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41273,7 +41273,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-  - name: 🚩 新-日-美-香
+  - name: 🇸🇬 新-日-美-香
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41282,7 +41282,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇺🇸 美国
       - 🇭🇰 香港
-  - name: 🚩 日-新-美-香
+  - name: 🇯🇵 新-日-美-香
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41302,7 +41302,7 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
-  - name: 🎯 全球直连
+  - name: 🇨🇳  🎯 全球直连
     type: select
     proxies:
       - DIRECT
@@ -41310,7 +41310,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
 rule-providers:
   allow-cn:
     type: http

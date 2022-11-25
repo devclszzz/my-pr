@@ -41030,12 +41030,12 @@ proxy-groups:
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41044,13 +41044,13 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 300
     proxies:
-      - 🚩 香-日-新-美(AUTO)
+      - 🇭🇰 香-日-新-美(AUTO)
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -41059,7 +41059,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies:
-      - 🚩 香-日-新-美
+      - 🇭🇰 香-日-新-美
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -41137,18 +41137,18 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🔯 故障转移
       - ⏬ 下载节点
       - 🚑 备用节点
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - 🇭🇰 香港(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -41162,21 +41162,21 @@ proxy-groups:
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - REJECT
   - name: 🎵 Kuaishou
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
       - REJECT
   - name: 🎵 Tiktok
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
-      - 🚩 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
+      - 🇭🇰 香-日-新-美
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🇸🇬 新加坡
@@ -41194,9 +41194,9 @@ proxy-groups:
   - name: 📺 Netflix
     type: select
     proxies:
-      - 🚩 新-日-美-香
-      - 🚩 日-新-美-香
-      - 🚩 香-日-新-美
+      - 🇸🇬 新-日-美-香
+      - 🇯🇵 新-日-美-香
+      - 🇭🇰 香-日-新-美
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🇸🇬 新加坡
@@ -41215,12 +41215,12 @@ proxy-groups:
     type: select
     proxies:
       - REJECT
-      - 🚩 香-日-新-美(AUTO)
-      - 🚩 日-新-美-香(AUTO)
-      - 🚩 新-日-美-香(AUTO)
-      - 🚩 香-日-新-美
-      - 🚩 日-新-美-香
-      - 🚩 新-日-美-香
+      - 🇭🇰 香-日-新-美(AUTO)
+      - 🇯🇵 新-日-美-香(AUTO)
+      - 🇸🇬 新-日-美-香(AUTO)
+      - 🇭🇰 香-日-新-美
+      - 🇯🇵 新-日-美-香
+      - 🇸🇬 新-日-美-香
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🚀 节点选择
@@ -41234,7 +41234,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-  - name: 🚩 香-日-新-美(AUTO)
+  - name: 🇭🇰 香-日-新-美(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41244,7 +41244,7 @@ proxy-groups:
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 新-日-美-香(AUTO)
+  - name: 🇸🇬 新-日-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41254,7 +41254,7 @@ proxy-groups:
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 日-新-美-香(AUTO)
+  - name: 🇯🇵 新-日-美-香(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41264,7 +41264,7 @@ proxy-groups:
       - 🇺🇸 美国(AUTO)
       - 🇭🇰 香港(AUTO)
       - ⚡ 最快节点
-  - name: 🚩 香-日-新-美
+  - name: 🇭🇰 香-日-新-美
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41273,7 +41273,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-  - name: 🚩 新-日-美-香
+  - name: 🇸🇬 新-日-美-香
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41282,7 +41282,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇺🇸 美国
       - 🇭🇰 香港
-  - name: 🚩 日-新-美-香
+  - name: 🇯🇵 新-日-美-香
     type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
@@ -41302,7 +41302,7 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
-  - name: 🎯 全球直连
+  - name: 🇨🇳  🎯 全球直连
     type: select
     proxies:
       - DIRECT
@@ -41310,144 +41310,144 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
+      - 🇨🇳  🎯 全球直连
 rule-providers:
   allow-cn:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/allow-cn.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
     interval: 60
   allow-us:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/allow-us.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
     interval: 60
   hk:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/hk.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/hk.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   jp:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/jp.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/jp.yaml"
     path: ./ruleset/jp.yaml
     interval: 60
   sg:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/sg.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/sg.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   us:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/us.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/us.yaml"
     path: ./ruleset/hk.yaml
     interval: 60
   reject-diy:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/reject-diy.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
   host:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/host.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/host.yaml"
     path: ./ruleset/host.yaml
     interval: 3600
   reject:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/reject.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
     interval: 3600
   porn:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/porn.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
     interval: 3600
   download:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/download.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/download.yaml"
     path: ./ruleset/download.yaml
     interval: 3600
   douyin:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/douyin.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/douyin.yaml"
     path: ./ruleset/douyin.yaml
     interval: 60
   kuaishou:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/kuaishou.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/kuaishou.yaml"
     path: ./ruleset/kuaishou.yaml
     interval: 60
   tiktok:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/tiktok.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/tiktok.yaml"
     path: ./ruleset/tiktok.yaml
     interval: 60
   nf:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/nf.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 60
   apple:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/apple.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/apple.yaml"
     path: ./ruleset/apple.yaml
     interval: 3600
   icloud:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/icloud.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/icloud.yaml"
     path: ./ruleset/icloud.yaml
     interval: 3600
   gfw:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/gfw.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/gfw.yaml"
     path: ./ruleset/gfw.yaml
     interval: 3600
   greatfire:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/greatfire.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/greatfire.yaml"
     path: ./ruleset/greatfire.yaml
     interval: 3600
   proxy:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/proxy.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/proxy.yaml"
     path: ./ruleset/proxy.yaml
     interval: 3600
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/lancidr.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 3600
   private:
     type: http
     behavior: domain
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/private.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/private.yaml"
     path: ./ruleset/private.yaml
     interval: 3600
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/cncidr.yaml"
+    url: "https://raw.githubusercontent.com/devclszzz/my-pr/main/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
 rules:
