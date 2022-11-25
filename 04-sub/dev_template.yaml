@@ -41046,7 +41046,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 最快节点
       - 🔯 故障转移
-  - name: 🇨🇳 全球直连
+  - name:🇨🇳 全球直连
     type: select
     proxies:
       - DIRECT
