@@ -41026,7 +41026,7 @@ proxy-groups:
     proxies:
       - ⚡ 最快节点
       - 🔯 故障转移
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
   - name: ⚡ 最快节点
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -41042,11 +41042,11 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
       - 🚀 节点选择
       - ⚡ 最快节点
       - 🔯 故障转移
-  - name: 🎯 全球直连
+  - name: 🇨🇳 全球直连
     type: select
     proxies:
       - DIRECT
@@ -41054,7 +41054,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
 rule-providers:
   host:
     type: http
@@ -41163,8 +41163,8 @@ rules:
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
-  - RULE-SET,lancidr,🎯 全球直连
-  - RULE-SET,private,🎯 全球直连
-  - RULE-SET,cncidr,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
+  - RULE-SET,lancidr,🇨🇳 全球直连
+  - RULE-SET,private,🇨🇳 全球直连
+  - RULE-SET,cncidr,🇨🇳 全球直连
+  - GEOIP,CN,🇨🇳 全球直连
   - MATCH,🐟 漏网之鱼

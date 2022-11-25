@@ -41044,7 +41044,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇨🇳  🎯 全球直连
+      - 🇨🇳  🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://1.1.1.1/generate_204
@@ -41137,7 +41137,7 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🇨🇳  🎯 全球直连
+      - 🇨🇳  🇨🇳 全球直连
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🔯 故障转移
@@ -41162,13 +41162,13 @@ proxy-groups:
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🇨🇳  🎯 全球直连
+      - 🇨🇳  🇨🇳 全球直连
       - REJECT
   - name: 🎵 Kuaishou
     type: select
     url: http://1.1.1.1/generate_204
     proxies:
-      - 🇨🇳  🎯 全球直连
+      - 🇨🇳  🇨🇳 全球直连
       - REJECT
   - name: 🎵 Tiktok
     type: select
@@ -41302,7 +41302,7 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
-  - name: 🇨🇳  🎯 全球直连
+  - name: 🇨🇳  🇨🇳 全球直连
     type: select
     proxies:
       - DIRECT
@@ -41310,7 +41310,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🇨🇳  🎯 全球直连
+      - 🇨🇳  🇨🇳 全球直连
 rule-providers:
   allow-cn:
     type: http
@@ -41465,7 +41465,7 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
-  - RULE-SET,allow-cn,🎯 全球直连
+  - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,jp,🇯🇵 日本
@@ -41484,8 +41484,8 @@ rules:
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
-  - RULE-SET,lancidr,🎯 全球直连
-  - RULE-SET,private,🎯 全球直连
-  - RULE-SET,cncidr,🎯 全球直连
-  - GEOIP,CN,🎯 全球直连
+  - RULE-SET,lancidr,🇨🇳 全球直连
+  - RULE-SET,private,🇨🇳 全球直连
+  - RULE-SET,cncidr,🇨🇳 全球直连
+  - GEOIP,CN,🇨🇳 全球直连
   - MATCH,🐟 漏网之鱼

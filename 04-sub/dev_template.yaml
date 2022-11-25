@@ -41026,7 +41026,7 @@ proxy-groups:
     proxies:
       - ⚡ 最快节点
       - 🔯 故障转移
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
   - name: ⚡ 最快节点
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -41042,11 +41042,11 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
       - 🚀 节点选择
       - ⚡ 最快节点
       - 🔯 故障转移
-  - name: 🎯 全球直连
+  - name: 🇨🇳 全球直连
     type: select
     proxies:
       - DIRECT
@@ -41054,7 +41054,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🎯 全球直连
+      - 🇨🇳 全球直连
 rule-providers:
   host:
     type: http
@@ -41155,5 +41155,5 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
-  - GEOIP,CN,🎯 全球直连
+  - GEOIP,CN,🇨🇳 全球直连
   - MATCH,🐟 漏网之鱼
