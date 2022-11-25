@@ -41216,6 +41216,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 60
     proxies:
+      - REJECT
       - 🚩 香-日-新-美(AUTO)
       - 🚩 日-新-美-香(AUTO)
       - 🚩 新-日-美-香(AUTO)
@@ -41235,7 +41236,6 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - REJECT
   - name: 🚩 香-日-新-美(AUTO)
     type: fallback
     url: http://1.1.1.1/generate_204
