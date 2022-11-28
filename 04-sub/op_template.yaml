@@ -5882,6 +5882,12 @@ rule-providers:
     url: "http://192.168.88.251:56680/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 600
+  myApple:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/my-apple.yaml"
+    path: ./ruleset/my-apple.yaml
+    interval: 600
   apple:
     type: http
     behavior: domain
@@ -5963,6 +5969,7 @@ rules:
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
+  - RULE-SET,myApple,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,gfw,🚀 节点选择
