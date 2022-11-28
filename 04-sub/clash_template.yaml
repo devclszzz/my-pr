@@ -5580,6 +5580,21 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 最快节点
       - 🔯 故障转移
+  - name: 🎵 Tiktok
+    type: select
+    url: http://1.1.1.1/generate_204
+    proxies:
+      - 🚀 节点选择
+      - ⚡ 最快节点
+      - 🔯 故障转移
+      - REJECT
+  - name: 📺 Netflix
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ⚡ 最快节点
+      - 🔯 故障转移
+      - REJECT
   - name: 🇨🇳 全球直连
     type: select
     proxies:
@@ -5589,6 +5604,79 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - 🇨🇳 全球直连
+rule-providers:
+  host:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
+    path: ./ruleset/host.yaml
+    interval: 3600
+  porn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/porn.yaml"
+    path: ./ruleset/porn.yaml
+    interval: 3600
+  tiktok:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/tiktok.yaml"
+    path: ./ruleset/tiktok.yaml
+    interval: 3600
+  nf:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/nf.yaml"
+    path: ./ruleset/nf.yaml
+    interval: 3600
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/apple.yaml"
+    path: ./ruleset/apple.yaml
+    interval: 3600
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/icloud.yaml"
+    path: ./ruleset/icloud.yaml
+    interval: 3600
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/gfw.yaml"
+    path: ./ruleset/gfw.yaml
+    interval: 3600
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/greatfire.yaml"
+    path: ./ruleset/greatfire.yaml
+    interval: 3600
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/proxy.yaml"
+    path: ./ruleset/proxy.yaml
+    interval: 3600
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/lancidr.yaml"
+    path: ./ruleset/lancidr.yaml
+    interval: 3600
+  private:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/private.yaml"
+    path: ./ruleset/private.yaml
+    interval: 3600
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
+    path: ./ruleset/cncidr.yaml
+    interval: 3600
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
@@ -5609,5 +5697,18 @@ rules:
   - DOMAIN,hk-hkg.doh.sb,🚀 节点选择
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
+  - DOMAIN,dns.twnic.tw,🚀 节点选择
+  - RULE-SET,host,REJECT
+  - RULE-SET,porn,🚀 节点选择
+  - RULE-SET,apple,🍎 苹果服务
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,tiktok,🎵 Tiktok
+  - RULE-SET,nf,📺 Netflix
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,greatfire,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,lancidr,🇨🇳 全球直连
+  - RULE-SET,private,🇨🇳 全球直连
+  - RULE-SET,cncidr,🇨🇳 全球直连
   - GEOIP,CN,🇨🇳 全球直连
   - MATCH,🐟 漏网之鱼
