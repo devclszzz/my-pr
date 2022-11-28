@@ -1,33 +1,4 @@
 proxies:
-  - name: USA-mingle01
-    server: devclszzz.mingle666.top
-    port: 56682
-    type: trojan
-    password: zjm123123
-    sni: rncdn.mingle666.top
-    skip-cert-verify: true
-    udp: true
-    network: ws
-    ws-opts:
-      path: /zjm123123
-      headers:
-        host: devclszzz.mingle666.top
-  - name: USA-mingle02
-    type: vmess
-    server: devclszzz.mingle666.top
-    port: 56682
-    uuid: f2eae96c-f97f-48af-a1f4-e60f29d6db19
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: true
-    skip-cert-verify: true
-    servername: devclszzz.mingle666.top
-    network: ws
-    ws-opts:
-      path: /vmesswszjm123123
-      headers:
-        Host: devclszzz.mingle666.top
   - name: USA-mingle03
     server: rncdn.mingle666.top
     port: 443
