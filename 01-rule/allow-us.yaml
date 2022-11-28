@@ -1,2 +1,3 @@
 payload:
-  - DOMAIN-SUFFIX,www.github.site
+  - DOMAIN-SUFFIX,githubusercontent.com
+  - DOMAIN-SUFFIX,github.com
