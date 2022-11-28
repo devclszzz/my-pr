@@ -5639,11 +5639,9 @@ proxy-groups:
       - 🚜 低倍率节点
       - 🚜 备用节点
   - name: 🚜 低倍率节点
-    type: url-test
+    type: fallback
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
-    tolerance: 150
     proxies: [ ]
   - name: 🚑 备用节点
     type: select
