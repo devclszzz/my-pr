@@ -30,7 +30,7 @@ fi
 
 if [ 0 -eq `docker ps | grep 25500 -c` ]; then
 
-  docker run -d --name subconverter --restart=always -p 25500:25500  registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-api
+  docker run -d --name sub-api  --restart=always -p 25500:25500  registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-api
 
   echo "success install docker sub-api..."
 
@@ -38,7 +38,7 @@ fi
 
 if [ 0 -eq `docker ps | grep 56681 -c` ]; then
 
-  docker run -d --name sub-web -p 56681:80 --restart always registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-web-mingle666.top
+  docker run -d --name sub-web --restart=always -p 56681:80 registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-web-mingle666.top
 
   echo "success install docker sub-web..."
 
