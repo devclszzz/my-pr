@@ -22,9 +22,25 @@ fi
 
 if [ 0 -eq `docker ps | grep 56680 -c` ]; then
 
-    docker run -d -p 56680:80 -v /dev_tools:/usr/share/nginx/html --name=nginx --restart=always nginx
+  docker run -d -p 56680:80 -v /dev_tools:/usr/share/nginx/html --name=nginx --restart=always nginx
 
-    echo "success install docker nginx..."
+  echo "success install docker nginx..."
+
+fi
+
+if [ 0 -eq `docker ps | grep 25500 -c` ]; then
+
+  docker run -d --name subconverter --restart=always -p 25500:25500  registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-api
+
+  echo "success install docker sub-api..."
+
+fi
+
+if [ 0 -eq `docker ps | grep 56681 -c` ]; then
+
+  docker run -d --name sub-web -p 56681:80 --restart always registry.cn-shenzhen.aliyuncs.com/jmglezhu/mydocker:sub-web-mingle666.top
+
+  echo "success install docker sub-web..."
 
 fi
 
@@ -62,3 +78,7 @@ systemctl restart xray
 [ 0 -eq `ufw status | grep 80 -c` ] && ufw allow 80
 [ 0 -eq `ufw status | grep 6680 -c` ] && ufw allow 6680
 [ 0 -eq `ufw status | grep 22 -c` ] && ufw allow 22
+[ 0 -eq `ufw status | grep 25500 -c` ] && ufw allow 25500
+[ 0 -eq `ufw status | grep 56680 -c` ] && ufw allow 56680
+[ 0 -eq `ufw status | grep 56681 -c` ] && ufw allow 56681
+
