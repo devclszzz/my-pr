@@ -44,6 +44,10 @@ wget -O /myapp/xray.zip https://raw.githubusercontent.com/devclszzz/my-pr/main/0
 
 [ ! -d /myapp/xray ] && unzip /myapp/xray.zip -d /myapp
 
+wget -O /myapp/xray/geoip.dat https://raw.githubusercontent.com/devclszzz/my-pr/main/03-geoip/geoip.dat
+
+wget -O /myapp/xray/geosite.dat https://raw.githubusercontent.com/devclszzz/my-pr/main/03-geoip/geosite.dat
+
 chmod +x /myapp/xray/xray
 
 cp /myapp/xray/xray.service /etc/systemd/system
@@ -51,3 +55,10 @@ cp /myapp/xray/xray.service /etc/systemd/system
 systemctl enable xray
 
 systemctl restart xray
+
+[ ! `command -v ufw` ] && apt install ufw -y
+
+[ 0 -eq `ufw status | grep 443 -c` ] && ufw allow 443
+[ 0 -eq `ufw status | grep 80 -c` ] && ufw allow 80
+[ 0 -eq `ufw status | grep 6680 -c` ] && ufw allow 6680
+[ 0 -eq `ufw status | grep 22 -c` ] && ufw allow 22
