@@ -22,11 +22,8 @@ dns:
     - "*.lan"
   nameserver:
     - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
     - https://1.12.12.12/dns-query
-    - https://120.53.53.53/dns-query
     - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
   fallback:
     - https://hk-hkg.doh.sb/dns-query
     - https://dns.rubyfish.cn/dns-query
@@ -34,9 +31,6 @@ dns:
     - https://public.dns.iij.jp/dns-query
     - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
-    - https://208.67.222.222/dns-query
-    - https://doh.dns.sb/dns-query
-    - https://dns.quad9.net/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
