@@ -5608,6 +5608,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
     path: ./ruleset/host.yaml
     interval: 600
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
+    interval: 600
   porn:
     type: http
     behavior: classical
@@ -5702,6 +5708,7 @@ rules:
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,host,REJECT
+  - RULE-SET,reject,REJECT
   - RULE-SET,porn,🚀 节点选择
   - RULE-SET,myApple,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务

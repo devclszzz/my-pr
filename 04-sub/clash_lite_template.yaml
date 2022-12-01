@@ -5813,73 +5813,73 @@ rule-providers:
   allow-cn:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/allow-cn.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
     interval: 60
   allow-us:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/allow-us.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
     interval: 60
   hk:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/hk.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/hk.yaml"
     path: ./ruleset/hk.yaml
     interval: 600
   jp:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/jp.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/jp.yaml"
     path: ./ruleset/jp.yaml
     interval: 600
   sg:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/sg.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/sg.yaml"
     path: ./ruleset/hk.yaml
     interval: 600
   us:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/us.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/us.yaml"
     path: ./ruleset/hk.yaml
     interval: 600
   reject-diy:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/reject-diy.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
-  host:
+  reject:
     type: http
-    behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/host.yaml"
-    path: ./ruleset/host.yaml
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
     interval: 600
   porn:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/porn.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
     interval: 600
   download:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/download.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/download.yaml"
     path: ./ruleset/download.yaml
     interval: 600
   tiktok:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/tiktok.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/tiktok.yaml"
     path: ./ruleset/tiktok.yaml
     interval: 600
   nf:
     type: http
     behavior: classical
-    url: "http://192.168.88.251:56680/01-rule/nf.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 600
   myApple:
@@ -5891,49 +5891,49 @@ rule-providers:
   apple:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/apple.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/apple.yaml"
     path: ./ruleset/apple.yaml
     interval: 3600
   icloud:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/icloud.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/icloud.yaml"
     path: ./ruleset/icloud.yaml
     interval: 3600
   gfw:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/gfw.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/gfw.yaml"
     path: ./ruleset/gfw.yaml
     interval: 3600
   greatfire:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/greatfire.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/greatfire.yaml"
     path: ./ruleset/greatfire.yaml
     interval: 3600
   proxy:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/proxy.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/proxy.yaml"
     path: ./ruleset/proxy.yaml
     interval: 3600
   lancidr:
     type: http
     behavior: ipcidr
-    url: "http://192.168.88.251:56680/01-rule/lancidr.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 3600
   private:
     type: http
     behavior: domain
-    url: "http://192.168.88.251:56680/01-rule/private.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/private.yaml"
     path: ./ruleset/private.yaml
     interval: 3600
   cncidr:
     type: http
     behavior: ipcidr
-    url: "http://192.168.88.251:56680/01-rule/cncidr.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
 rules:
@@ -5964,7 +5964,7 @@ rules:
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
   - RULE-SET,reject-diy,REJECT
-  - RULE-SET,host,REJECT
+  - RULE-SET,reject,REJECT
   - RULE-SET,porn,🈲 Porn
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
