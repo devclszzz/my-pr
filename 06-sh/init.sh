@@ -68,6 +68,8 @@ chmod +x /myapp/xray/xray
 
 cp /myapp/xray/xray.service /etc/systemd/system
 
+system daemon-reload
+
 systemctl enable xray
 
 systemctl restart xray
