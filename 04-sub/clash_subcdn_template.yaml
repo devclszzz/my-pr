@@ -5891,7 +5891,7 @@ rule-providers:
   myApple:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/my-apple.yaml"
+    url: "https://subcdn.mingle666.top/01-rule/my-apple.yaml"
     path: ./ruleset/my-apple.yaml
     interval: 600
   apple:
