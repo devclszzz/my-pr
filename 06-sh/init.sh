@@ -50,9 +50,9 @@ fi
 
 [ ! `command -v wget` ] && apt install wget -y
 
-wget -O /myapp/domain.cer https://raw.githubusercontent.com/devclszzz/my-pr/main/05-ca/mingle666.top.cer
+wget -O /myapp/domain.cer https://raw.githubusercontent.com/devclszzz/my-pr/main/05-ca/domain.cer
 
-wget -O /myapp/domain.key https://raw.githubusercontent.com/devclszzz/my-pr/main/05-ca/mingle666.top.key
+wget -O /myapp/domain.key https://raw.githubusercontent.com/devclszzz/my-pr/main/05-ca/domain.key
 
 wget -O /myapp/xray.zip https://raw.githubusercontent.com/devclszzz/my-pr/main/02-conf/xray.zip
 
