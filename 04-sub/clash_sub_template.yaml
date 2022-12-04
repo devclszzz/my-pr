@@ -5701,9 +5701,9 @@ proxy-groups:
   - name: 📺 Netflix
     type: select
     proxies:
+      - 🇭🇰 香-日-新-美
       - 🇸🇬 新-日-美-香
       - 🇯🇵 日-新-美-香
-      - 🇭🇰 香-日-新-美
       - ⏬ 下载节点
       - 🚑 备用节点
       - 🇸🇬 新加坡
