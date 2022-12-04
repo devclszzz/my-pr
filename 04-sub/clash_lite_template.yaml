@@ -28,11 +28,14 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
+    - https://dns.nextdns.io/dns-query
     - https://hk-hkg.doh.sb/dns-query
-    - https://dns.twnic.tw/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.google/dns-query
+    - https://101.101.101.101/dns-query
     - https://public.dns.iij.jp/dns-query
-    - https://8.8.8.8/dns-query
     - https://1.1.1.1/dns-query
+    - https://doh.opendns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
