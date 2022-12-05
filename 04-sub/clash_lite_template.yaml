@@ -5855,11 +5855,11 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
-  reject:
+  host:
     type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
-    path: ./ruleset/reject.yaml
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
+    path: ./ruleset/host.yaml
     interval: 600
   porn:
     type: http
@@ -5967,7 +5967,7 @@ rules:
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
   - RULE-SET,reject-diy,REJECT
-  - RULE-SET,reject,REJECT
+  - RULE-SET,host,REJECT
   - RULE-SET,porn,🈲 Porn
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
