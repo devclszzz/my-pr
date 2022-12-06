@@ -5645,6 +5645,7 @@ proxy-groups:
     proxies:
       - 🚜 低倍率节点
       - 🚜 备用节点
+      - ⚡ 最快节点
   - name: 🚜 低倍率节点
     type: fallback
     url: http://1.1.1.1/generate_204
