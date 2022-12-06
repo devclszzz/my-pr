@@ -5576,8 +5576,8 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🇨🇳 全球直连
       - 🚀 节点选择
+      - 🇨🇳 全球直连
       - ⚡ 最快节点
       - 🔯 故障转移
   - name: 🇨🇳 全球直连
