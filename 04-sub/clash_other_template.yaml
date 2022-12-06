@@ -5629,11 +5629,11 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 3600
-  myApple:
+  iphone:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/my-apple.yaml"
-    path: ./ruleset/my-apple.yaml
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/iphone.yaml"
+    path: ./ruleset/iphone.yaml
     interval: 600
   apple:
     type: http
@@ -5706,7 +5706,7 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,host,REJECT
   - RULE-SET,porn,🚀 节点选择
-  - RULE-SET,myApple,🍎 苹果服务
+  - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,tiktok,🎵 Tiktok

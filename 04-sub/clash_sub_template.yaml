@@ -5797,6 +5797,11 @@ proxy-groups:
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国(AUTO)
+  - name: 🍑KUAI_SHOU
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🇨🇳 全球直连
     type: select
     proxies:
@@ -5824,67 +5829,121 @@ rule-providers:
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/hk.yaml"
     path: ./ruleset/hk.yaml
-    interval: 600
+    interval: 3600
   jp:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/jp.yaml"
     path: ./ruleset/jp.yaml
-    interval: 600
+    interval: 3600
   sg:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/sg.yaml"
     path: ./ruleset/hk.yaml
-    interval: 600
+    interval: 3600
   us:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/us.yaml"
     path: ./ruleset/hk.yaml
-    interval: 600
-  reject-diy:
+    interval: 3600
+  rejectDiy:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
+  zhihuAd:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/zhihu-ad.yaml"
+    path: ./ruleset/zhihu-ad.yaml
+    interval: 3600
+  directAd:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/direct-ad.yaml"
+    path: ./ruleset/direct-ad.yaml
+    interval: 3600
+  directAd2:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/direct-ad2.yaml"
+    path: ./ruleset/direct-ad2.yaml
+    interval: 3600
+  rejectAd:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/reject-ad.yaml"
+    path: ./ruleset/reject-ad.yaml
+    interval: 3600
+  guowai:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/guowai.yaml"
+    path: ./ruleset/guowai.yaml
+    interval: 3600
   host:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/host.yaml"
     path: ./ruleset/host.yaml
-    interval: 600
+    interval: 3600
+  privacy:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/privacy.yaml"
+    path: ./ruleset/privacy.yaml
+    interval: 3600
   porn:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
-    interval: 600
+    interval: 3600
   download:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/download.yaml"
     path: ./ruleset/download.yaml
-    interval: 600
+    interval: 3600
   tiktok:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/tiktok.yaml"
     path: ./ruleset/tiktok.yaml
-    interval: 600
+    interval: 3600
   nf:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
-    interval: 600
-  myApple:
+    interval: 3600
+  telegram:
     type: http
     behavior: classical
-    url: "http://sub.mingle666.top:56680/01-rule/my-apple.yaml"
-    path: ./ruleset/my-apple.yaml
-    interval: 600
+    url: "http://sub.mingle666.top:56680/01-rule/telegram.yaml"
+    path: ./ruleset/telegram.yaml
+    interval: 3600
+  pt:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/pt.yaml"
+    path: ./ruleset/pt.yaml
+    interval: 3600
+  kuaishou:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/kuaishou.yaml"
+    path: ./ruleset/kuaishou.yaml
+    interval: 3600
+  iphone:
+    type: http
+    behavior: classical
+    url: "http://sub.mingle666.top:56680/01-rule/iphone.yaml"
+    path: ./ruleset/iphone.yaml
+    interval: 3600
   apple:
     type: http
     behavior: domain
@@ -5960,18 +6019,27 @@ rules:
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
-  - RULE-SET,reject-diy,REJECT
-  - RULE-SET,host,REJECT
+  - RULE-SET,guowai,REJECT
+  - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,zhihuAd,REJECT
+  - RULE-SET,privacy,REJECT
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
-  - RULE-SET,myApple,🍎 苹果服务
+  - RULE-SET,telegram,⏬ 下载节点
+  - RULE-SET,pt,⏬ 下载节点
+  - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,porn,🈲 Porn
+  - RULE-SET,directAD,🇨🇳 全球直连
+  - RULE-SET,directAD2,🇨🇳 全球直连
+  - RULE-SET,host,REJECT
+  - RULE-SET,kuaishou,🍑KUAI_SHOU
+  - RULE-SET,rejectAD,REJECT
   - RULE-SET,lancidr,🇨🇳 全球直连
   - RULE-SET,private,🇨🇳 全球直连
   - RULE-SET,cncidr,🇨🇳 全球直连
