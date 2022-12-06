@@ -5860,13 +5860,13 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/zhihu-ad.yaml"
     path: ./ruleset/zhihu-ad.yaml
     interval: 3600
-  directAd:
+  directAD:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct-ad.yaml"
     path: ./ruleset/direct-ad.yaml
     interval: 3600
-  directAd2:
+  directAD2:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct-ad2.yaml"
