@@ -5860,6 +5860,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/zhihu-ad.yaml"
     path: ./ruleset/zhihu-ad.yaml
     interval: 3600
+  direct:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct.yaml"
+    path: ./ruleset/direct.yaml
+    interval: 3600
   directAD:
     type: http
     behavior: classical
@@ -6035,6 +6041,7 @@ rules:
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,porn,🈲 Porn
+  - RULE-SET,direct,🇨🇳 全球直连
   - RULE-SET,directAD,🇨🇳 全球直连
   - RULE-SET,directAD2,🇨🇳 全球直连
   - RULE-SET,host,REJECT
