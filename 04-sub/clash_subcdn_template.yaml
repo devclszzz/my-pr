@@ -5872,7 +5872,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct-ad2.yaml"
     path: ./ruleset/direct-ad2.yaml
     interval: 3600
-  rejectAd:
+  rejectAD:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-ad.yaml"
