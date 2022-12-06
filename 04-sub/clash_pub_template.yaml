@@ -5627,7 +5627,7 @@ rule-providers:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./ruleset/apple.yaml
+    path: ./ruleset/reject.yaml
     interval: 3600
   apple:
     type: http
