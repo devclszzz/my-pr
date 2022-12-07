@@ -5878,12 +5878,6 @@ rule-providers:
     url: "http://sub.mingle666.top:56680/01-rule/direct-ad2.yaml"
     path: ./ruleset/direct-ad2.yaml
     interval: 3600
-  rejectAD:
-    type: http
-    behavior: classical
-    url: "http://sub.mingle666.top:56680/01-rule/reject-ad.yaml"
-    path: ./ruleset/reject-ad.yaml
-    interval: 3600
   guowai:
     type: http
     behavior: classical
@@ -6046,7 +6040,6 @@ rules:
   - RULE-SET,directAD2,🇨🇳 全球直连
   - RULE-SET,host,REJECT
   - RULE-SET,kuaishou,🍑KUAI_SHOU
-  - RULE-SET,rejectAD,REJECT
   - RULE-SET,lancidr,🇨🇳 全球直连
   - RULE-SET,private,🇨🇳 全球直连
   - RULE-SET,cncidr,🇨🇳 全球直连
