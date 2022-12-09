@@ -5588,35 +5588,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🇨🇳 全球直连
 rule-providers:
-  direct:
+  reject:
     type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct.yaml"
-    path: ./ruleset/direct.yaml
-    interval: 3600
-  directAD:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct-ad.yaml"
-    path: ./ruleset/direct-ad.yaml
-    interval: 3600
-  directAD2:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/direct-ad2.yaml"
-    path: ./ruleset/direct-ad2.yaml
-    interval: 3600
-  guowai:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/guowai.yaml"
-    path: ./ruleset/guowai.yaml
-    interval: 3600
-  host:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
-    path: ./ruleset/host.yaml
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
     interval: 3600
   privacy:
     type: http
@@ -5687,16 +5663,12 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
-  - RULE-SET,guowai,REJECT
+  - RULE-SET,reject,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
-  - RULE-SET,direct,🇨🇳 全球直连
-  - RULE-SET,directAD,🇨🇳 全球直连
-  - RULE-SET,directAD2,🇨🇳 全球直连
-  - RULE-SET,host,REJECT
   - RULE-SET,lancidr,🇨🇳 全球直连
   - RULE-SET,private,🇨🇳 全球直连
   - RULE-SET,cncidr,🇨🇳 全球直连

@@ -5884,6 +5884,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/guowai.yaml"
     path: ./ruleset/guowai.yaml
     interval: 3600
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
+    interval: 3600
   host:
     type: http
     behavior: classical
@@ -6019,8 +6025,9 @@ rules:
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
-  - RULE-SET,guowai,REJECT
   - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,guowai,REJECT
+  - RULE-SET,reject,REJECT
   - RULE-SET,zhihuAd,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,download,⏬ 下载节点
