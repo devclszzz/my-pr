@@ -5578,6 +5578,14 @@ proxy-groups:
     interval: 300
     proxies:
       - 🇭🇰 香-日-新-美(AUTO)
+      - 🇭🇰 香港(AUTO)
+      - 🇭🇰 香港
+      - 🇯🇵 日本(AUTO)
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡(AUTO)
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国(AUTO)
+      - 🇺🇸 美国
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -5735,13 +5743,9 @@ proxy-groups:
     interval: 60
     proxies:
       - 🇭🇰 香港(AUTO)
-      - 🇭🇰 香港
       - 🇯🇵 日本(AUTO)
-      - 🇯🇵 日本
       - 🇸🇬 新加坡(AUTO)
-      - 🇸🇬 新加坡
       - 🇺🇸 美国(AUTO)
-      - 🇺🇸 美国
       - ⚡ 最快节点
   - name: 🇸🇬 新-日-美-香(AUTO)
     type: fallback
@@ -6001,15 +6005,15 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
+  - RULE-SET,guowai,REJECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,zhihuAd,REJECT
+  - RULE-SET,privacy,REJECT
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
-  - RULE-SET,rejectDiy,REJECT
-  - RULE-SET,guowai,REJECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,zhihuAd,REJECT
-  - RULE-SET,privacy,REJECT
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
