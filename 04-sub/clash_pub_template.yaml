@@ -5627,13 +5627,13 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: select
     proxies:
-      - 🚀 节点选择
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇭🇰 香港
       - 🇹🇼 台湾
+      - 🇭🇰 香港
       - ⭕ 其他
+      - 🚀 节点选择
       - REJECT
   - name: 📺 Netflix
     type: select
