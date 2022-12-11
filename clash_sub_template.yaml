@@ -5578,6 +5578,14 @@ proxy-groups:
     interval: 300
     proxies:
       - 🇭🇰 香-日-新-美(AUTO)
+      - 🇭🇰 香港(AUTO)
+      - 🇭🇰 香港
+      - 🇯🇵 日本(AUTO)
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡(AUTO)
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国(AUTO)
+      - 🇺🇸 美国
       - ⚡ 最快节点
       - ⏬ 下载节点
       - 🚑 备用节点
@@ -5860,29 +5868,17 @@ rule-providers:
     url: "http://sub.mingle666.top:56680/01-rule/zhihu-ad.yaml"
     path: ./ruleset/zhihu-ad.yaml
     interval: 3600
-  direct:
-    type: http
-    behavior: classical
-    url: "http://sub.mingle666.top:56680/01-rule/direct.yaml"
-    path: ./ruleset/direct.yaml
-    interval: 3600
-  directAD:
-    type: http
-    behavior: classical
-    url: "http://sub.mingle666.top:56680/01-rule/direct-ad.yaml"
-    path: ./ruleset/direct-ad.yaml
-    interval: 3600
-  directAD2:
-    type: http
-    behavior: classical
-    url: "http://sub.mingle666.top:56680/01-rule/direct-ad2.yaml"
-    path: ./ruleset/direct-ad2.yaml
-    interval: 3600
   guowai:
     type: http
     behavior: classical
     url: "http://sub.mingle666.top:56680/01-rule/guowai.yaml"
     path: ./ruleset/guowai.yaml
+    interval: 3600
+  reject:
+    type: http
+    behavior: domain
+    url: "http://sub.mingle666.top:56680/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
     interval: 3600
   host:
     type: http
@@ -6015,14 +6011,16 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
+  - RULE-SET,guowai,REJECT
+  - RULE-SET,host,REJECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,zhihuAd,REJECT
+  - RULE-SET,privacy,REJECT
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,jp,🇯🇵 日本
   - RULE-SET,sg,🇸🇬 新加坡
   - RULE-SET,us,🇺🇸 美国
-  - RULE-SET,guowai,REJECT
-  - RULE-SET,rejectDiy,REJECT
-  - RULE-SET,zhihuAd,REJECT
-  - RULE-SET,privacy,REJECT
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
@@ -6035,10 +6033,6 @@ rules:
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,porn,🈲 Porn
-  - RULE-SET,direct,🇨🇳 全球直连
-  - RULE-SET,directAD,🇨🇳 全球直连
-  - RULE-SET,directAD2,🇨🇳 全球直连
-  - RULE-SET,host,REJECT
   - RULE-SET,kuaishou,🍑KUAI_SHOU
   - RULE-SET,lancidr,🇨🇳 全球直连
   - RULE-SET,private,🇨🇳 全球直连
