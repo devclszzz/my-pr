@@ -5614,6 +5614,27 @@ proxy-groups:
     lazy: false
     tolerance: 150
     proxies: [ ]
+  - name: ⏬ 下载节点
+    type: fallback
+    url: http://1.1.1.1/generate_204
+    interval: 120
+    proxies:
+      - 💪 低倍率节点
+      - 🚜 备用节点
+  - name: 💪 低倍率节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 120
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: 🚜 备用节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 120
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -5673,27 +5694,6 @@ proxy-groups:
       - ⏬ 下载节点
       - REJECT
       - 🇨🇳 全球直连
-  - name: ⏬ 下载节点
-    type: fallback
-    url: http://1.1.1.1/generate_204
-    interval: 120
-    proxies:
-      - 💪 低倍率节点
-      - 🚜 备用节点
-  - name: 💪 低倍率节点
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 120
-    lazy: false
-    tolerance: 150
-    proxies: [ ]
-  - name: 🚜 备用节点
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 120
-    lazy: false
-    tolerance: 150
-    proxies: [ ]
   - name: 🇨🇳 全球直连
     type: select
     proxies:
