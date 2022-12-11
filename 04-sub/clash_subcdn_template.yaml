@@ -5889,13 +5889,13 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
+  - RULE-SET,allow-cn,🇨🇳 全球直连
+  - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,guowai,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,zhihuAd,REJECT
-  - RULE-SET,allow-cn,🇨🇳 全球直连
-  - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,hk,🇭🇰 香港
   - RULE-SET,tw,🇹🇼 台湾
   - RULE-SET,jp,🇯🇵 日本
