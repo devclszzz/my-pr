@@ -5735,9 +5735,13 @@ proxy-groups:
     interval: 60
     proxies:
       - 🇭🇰 香港(AUTO)
+      - 🇭🇰 香港
       - 🇯🇵 日本(AUTO)
+      - 🇯🇵 日本
       - 🇸🇬 新加坡(AUTO)
+      - 🇸🇬 新加坡
       - 🇺🇸 美国(AUTO)
+      - 🇺🇸 美国
       - ⚡ 最快节点
   - name: 🇸🇬 新-日-美-香(AUTO)
     type: fallback
