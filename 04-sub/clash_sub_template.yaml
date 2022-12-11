@@ -5907,7 +5907,7 @@ rules:
   - RULE-SET,telegram,⏬ 下载节点
   - RULE-SET,pt,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
-  - RULE-SET,netflix,📺 Netflix
+  - RULE-SET,nf,📺 Netflix
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择

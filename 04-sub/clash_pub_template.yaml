@@ -5747,7 +5747,7 @@ rules:
   - RULE-SET,privacy,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,tiktok,🎵 Tiktok
-  - RULE-SET,netflix,📺 Netflix
+  - RULE-SET,nf,📺 Netflix
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
