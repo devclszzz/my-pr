@@ -5559,6 +5559,13 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - ⏬ 下载节点
+      - ⭕ 其他
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
