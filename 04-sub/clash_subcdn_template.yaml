@@ -5560,13 +5560,6 @@ proxy-groups:
     proxies:
       - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
-      - ⭕ 其他
-      - ⏬ 下载节点
       - 🇨🇳 全球直连
   - name: 🔯 故障转移
     type: fallback
@@ -5677,9 +5670,11 @@ proxy-groups:
       - 🇹🇼 台湾(AUTO)
       - 🇨🇳 全球直连
   - name: 💪 低倍率节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🚜 备用节点
     type: url-test
@@ -5700,31 +5695,24 @@ proxy-groups:
     proxies:
       - ⏬ 下载节点
       - 🚀 节点选择
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇺🇸 美国
-      - ⭕ 其他
-      - REJECT
       - 🇨🇳 全球直连
+      - REJECT
   - name: 🎵 Tiktok
     type: select
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国
-      - 🇹🇼 台湾
-      - 🇭🇰 香港
+      - 🇺🇸 美国(AUTO)
       - ⭕ 其他
       - ⏬ 下载节点
       - 🚀 节点选择
       - REJECT
-      - 🇨🇳 全球直连
   - name: 📺 Netflix
     type: select
     proxies:
-      - 🚀 节点选择
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
@@ -5732,21 +5720,25 @@ proxy-groups:
       - 🇺🇸 美国
       - ⭕ 其他
       - ⏬ 下载节点
+      - 🚀 节点选择
       - REJECT
-      - 🇨🇳 全球直连
   - name: 🈲 Porn
     type: select
     proxies:
       - 🚀 节点选择
+      - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
+      - 🇹🇼 台湾(AUTO)
       - 🇹🇼 台湾
+      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
+      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
+      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
       - ⭕ 其他
       - ⏬ 下载节点
       - REJECT
-      - 🇨🇳 全球直连
   - name: 🇨🇳 全球直连
     type: select
     proxies:

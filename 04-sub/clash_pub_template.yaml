@@ -5558,12 +5558,24 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🔯 故障转移
       - ♻️ 自动选择
+      - 🇨🇳 全球直连
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
       - 🇭🇰 香港
+      - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾
+      - 🇹🇼 台湾(AUTO)
       - 🇯🇵 日本
+      - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国
+      - 🇺🇸 美国(AUTO)
       - ⭕ 其他
       - ⏬ 下载节点
       - 🇨🇳 全球直连
@@ -5572,69 +5584,111 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
+      - 🇹🇼 台湾(AUTO)
       - 🇹🇼 台湾
+      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
+      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
+      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
       - ⭕ 其他
       - ⏬ 下载节点
       - 🇨🇳 全球直连
-  - name: 🇭🇰 香港
+  - name: 🇭🇰 香港(AUTO)
     type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: 🇭🇰 香港
+    type: fallback
     url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
+  - name: 🇹🇼 台湾(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
   - name: 🇹🇼 台湾
-    type: url-test
+    type: fallback
     url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
+  - name: 🇯🇵 日本(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
   - name: 🇯🇵 日本
-    type: url-test
+    type: fallback
     url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
+  - name: 🇸🇬 新加坡(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
   - name: 🇸🇬 新加坡
-    type: url-test
+    type: fallback
     url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
+  - name: 🇺🇸 美国(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
   - name: 🇺🇸 美国
-    type: url-test
+    type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-    tolerance: 150
-    proxies: [ ]
-  - name: ⭕ 其他
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-    tolerance: 150
+    interval: 60
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - 💪 低倍率节点
       - 🚜 备用节点
       - 🇭🇰 香港
+      - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾
+      - 🇹🇼 台湾(AUTO)
       - 🇨🇳 全球直连
-  - name: 🚜 备用节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+  - name: 💪 低倍率节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: 🚜 备用节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: ⭕ 其他
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
@@ -5642,27 +5696,48 @@ proxy-groups:
       - ⏬ 下载节点
       - 🚀 节点选择
       - 🇨🇳 全球直连
+      - REJECT
   - name: 🎵 Tiktok
     type: select
     proxies:
       - 🇯🇵 日本
+      - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡
+      - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国
-      - 🇹🇼 台湾
-      - 🇭🇰 香港
+      - 🇺🇸 美国(AUTO)
       - ⭕ 其他
+      - ⏬ 下载节点
       - 🚀 节点选择
       - REJECT
   - name: 📺 Netflix
     type: select
     proxies:
-      - 🚀 节点选择
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
       - 🇯🇵 日本
       - 🇺🇸 美国
       - ⭕ 其他
+      - ⏬ 下载节点
+      - 🚀 节点选择
+      - REJECT
+  - name: 🈲 Porn
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🇭🇰 香港(AUTO)
+      - 🇭🇰 香港
+      - 🇹🇼 台湾(AUTO)
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡(AUTO)
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本(AUTO)
+      - 🇯🇵 日本
+      - 🇺🇸 美国(AUTO)
+      - 🇺🇸 美国
+      - ⭕ 其他
+      - ⏬ 下载节点
       - REJECT
   - name: 🇨🇳 全球直连
     type: select
