@@ -5565,8 +5565,8 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - ⏬ 下载节点
       - ⭕ 其他
+      - ⏬ 下载节点
       - 🇨🇳 全球直连
   - name: 🔯 故障转移
     type: fallback
@@ -5583,8 +5583,9 @@ proxy-groups:
       - 🇸🇬 新加坡(AUTO)
       - 🇺🇸 美国
       - 🇺🇸 美国(AUTO)
-      - ⏬ 下载节点
       - ⭕ 其他
+      - ⏬ 下载节点
+      - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -5600,12 +5601,13 @@ proxy-groups:
       - 🇸🇬 新加坡
       - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
-      - ⏬ 下载节点
       - ⭕ 其他
+      - ⏬ 下载节点
+      - 🇨🇳 全球直连
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
@@ -5617,7 +5619,7 @@ proxy-groups:
   - name: 🇹🇼 台湾(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
@@ -5629,7 +5631,7 @@ proxy-groups:
   - name: 🇯🇵 日本(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
@@ -5641,7 +5643,7 @@ proxy-groups:
   - name: 🇸🇬 新加坡(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
@@ -5653,7 +5655,7 @@ proxy-groups:
   - name: 🇺🇸 美国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
@@ -5680,14 +5682,16 @@ proxy-groups:
     interval: 60
     proxies: [ ]
   - name: 🚜 备用节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 120
+    interval: 300
     lazy: false
     tolerance: 150
     proxies: [ ]
