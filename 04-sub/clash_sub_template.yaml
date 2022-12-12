@@ -5558,8 +5558,8 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
       - 🔯 故障转移
+      - ♻️ 自动选择
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
@@ -5568,6 +5568,23 @@ proxy-groups:
       - ⏬ 下载节点
       - ⭕ 其他
       - 🇨🇳 全球直连
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+      - 🇭🇰 香港
+      - 🇭🇰 香港(AUTO)
+      - 🇹🇼 台湾
+      - 🇹🇼 台湾(AUTO)
+      - 🇯🇵 日本
+      - 🇯🇵 日本(AUTO)
+      - 🇸🇬 新加坡
+      - 🇸🇬 新加坡(AUTO)
+      - 🇺🇸 美国
+      - 🇺🇸 美国(AUTO)
+      - ⏬ 下载节点
+      - ⭕ 其他
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -5582,18 +5599,6 @@ proxy-groups:
       - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
       - 🇺🇸 美国(AUTO)
-      - 🇺🇸 美国
-      - ⏬ 下载节点
-      - ⭕ 其他
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    proxies:
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
       - 🇺🇸 美国
       - ⏬ 下载节点
       - ⭕ 其他
@@ -5857,12 +5862,6 @@ rule-providers:
     url: "https://sub.mingle666.top/01-rule/telegram.yaml"
     path: ./ruleset/telegram.yaml
     interval: 3600
-  pt:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/pt.yaml"
-    path: ./ruleset/pt.yaml
-    interval: 3600
   tiktok:
     type: http
     behavior: classical
@@ -5950,7 +5949,6 @@ rules:
   - RULE-SET,porn,🈲 Porn
   - RULE-SET,download,⏬ 下载节点
   - RULE-SET,telegram,⏬ 下载节点
-  - RULE-SET,pt,⏬ 下载节点
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix
   - RULE-SET,gfw,🚀 节点选择
