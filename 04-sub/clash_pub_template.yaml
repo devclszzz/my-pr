@@ -5619,11 +5619,26 @@ proxy-groups:
     lazy: false
     tolerance: 150
     proxies: [ ]
+  - name: ⏬ 下载节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+      - 🚜 备用节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇨🇳 全球直连
+  - name: 🚜 备用节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🇨🇳 全球直连
+      - ⏬ 下载节点
       - 🚀 节点选择
+      - 🇨🇳 全球直连
   - name: 🎵 Tiktok
     type: select
     proxies:
