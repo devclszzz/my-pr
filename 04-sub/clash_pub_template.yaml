@@ -5559,6 +5559,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
@@ -5566,14 +5567,22 @@ proxy-groups:
     interval: 60
     proxies:
       - 🇭🇰 香港(AUTO)
-      - 🇭🇰 香港
       - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
       - 🇯🇵 日本(AUTO)
-      - 🇯🇵 日本
       - 🇸🇬 新加坡(AUTO)
-      - 🇸🇬 新加坡
       - 🇺🇸 美国(AUTO)
+      - ⭕ 其他
+      - ⏬ 下载节点
+      - 🇨🇳 全球直连
+  - name: 🔯 故障转移
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
       - 🇺🇸 美国
       - ⭕ 其他
       - ⏬ 下载节点
@@ -5694,6 +5703,7 @@ proxy-groups:
   - name: 📺 Netflix
     type: select
     proxies:
+      - 🔯 故障转移
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
