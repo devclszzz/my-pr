@@ -5566,6 +5566,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - 😁 主节点(AUTO)
       - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾(AUTO)
       - 🇯🇵 日本(AUTO)
@@ -5579,6 +5580,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - 😁 主节点
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
@@ -5587,6 +5589,18 @@ proxy-groups:
       - ⭕ 其他
       - ⏬ 下载节点
       - 🇨🇳 全球直连
+  - name: 😁 主节点(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: 😁 主节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
