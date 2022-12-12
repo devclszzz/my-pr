@@ -5650,14 +5650,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies: [ ]
-  - name: 🇺🇸 美国
+  - name: 🇺🇸 美国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 120
     lazy: false
     tolerance: 150
     proxies: [ ]
-  - name: 🇺🇸 美国(AUTO)
+  - name: 🇺🇸 美国
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
@@ -5670,20 +5670,18 @@ proxy-groups:
       - 💪 低倍率节点
       - 🚜 备用节点
       - 🇭🇰 香港
+      - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾
+      - 🇹🇼 台湾(AUTO)
   - name: 💪 低倍率节点
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 120
-    lazy: false
-    tolerance: 150
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
     proxies: [ ]
   - name: 🚜 备用节点
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 120
-    lazy: false
-    tolerance: 150
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
