@@ -5652,7 +5652,7 @@ proxy-groups:
     lazy: false
     tolerance: 150
     proxies: [ ]
-  - name: 🇺🇸 美国(AUTO)
+  - name: 🇺🇸 美国
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60

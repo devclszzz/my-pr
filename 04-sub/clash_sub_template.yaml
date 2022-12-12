@@ -5645,7 +5645,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies: [ ]
-  - name: 🇺🇸 美国(AUTO)
+  - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 120
