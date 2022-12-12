@@ -5567,6 +5567,7 @@ proxy-groups:
     interval: 60
     proxies:
       - 😁 主节点(AUTO)
+      - 😁 次节点(AUTO)
       - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾(AUTO)
       - 🇯🇵 日本(AUTO)
@@ -5581,6 +5582,7 @@ proxy-groups:
     interval: 60
     proxies:
       - 😁 主节点
+      - 😁 次节点
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
@@ -5597,6 +5599,18 @@ proxy-groups:
     tolerance: 150
     proxies: [ ]
   - name: 😁 主节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies: [ ]
+  - name: 😁 次节点(AUTO)
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 300
+    lazy: false
+    tolerance: 150
+    proxies: [ ]
+  - name: 😁 次节点
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
@@ -5668,10 +5682,12 @@ proxy-groups:
     proxies:
       - 💪 低倍率节点
       - 🚜 备用节点
-      - 🇭🇰 香港
+      - 😁 次节点(AUTO)
+      - 😁 次节点
       - 🇭🇰 香港(AUTO)
-      - 🇹🇼 台湾
+      - 🇭🇰 香港
       - 🇹🇼 台湾(AUTO)
+      - 🇹🇼 台湾
       - 🇨🇳 全球直连
   - name: 💪 低倍率节点
     type: url-test
