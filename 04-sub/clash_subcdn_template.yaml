@@ -5567,7 +5567,6 @@ proxy-groups:
     interval: 60
     proxies:
       - 😁 主节点(AUTO)
-      - 😁 次节点(AUTO)
       - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾(AUTO)
       - 🇯🇵 日本(AUTO)
@@ -5582,7 +5581,6 @@ proxy-groups:
     interval: 60
     proxies:
       - 😁 主节点
-      - 😁 次节点
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🇯🇵 日本
