@@ -5770,12 +5770,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🇨🇳 全球直连
 rule-providers:
-  guowai:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/guowai.yaml"
-    path: ./ruleset/guowai.yaml
-    interval: 3600
   reject:
     type: http
     behavior: domain
@@ -5949,7 +5943,6 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
-  - RULE-SET,guowai,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,rejectDiy,REJECT
