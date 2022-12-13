@@ -5586,6 +5586,7 @@ proxy-groups:
       - 🇺🇸 美国(AUTO)
       - ⭕ 其他
       - ⏬ 下载节点
+      - 🔯 故障转移
       - 🇨🇳 全球直连
   - name: 🔯 故障转移
     type: fallback
