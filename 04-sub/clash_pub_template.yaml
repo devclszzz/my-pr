@@ -5903,6 +5903,8 @@ rules:
   - IP-CIDR,101.101.101.101/32,🚀 节点选择,no-resolve
   - DOMAIN,dns.alidns.com,DIRECT
   - DOMAIN,doh.pub,DIRECT
+  - DOMAIN-SUFFIX,msftconnecttest.com, DIRECT
+  - DOMAIN-SUFFIX,msftncsi.com, DIRECT
   - DOMAIN,dns.cloudflare.com,🚀 节点选择
   - DOMAIN,cloudflare-dns.com,🚀 节点选择
   - DOMAIN,dns.google,🚀 节点选择
