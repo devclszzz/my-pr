@@ -96,10 +96,14 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
+    - https://101.101.101.101/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+    - https://dns.google/dns-query
     - https://dns.nextdns.io/dns-query
     - https://hk-hkg.doh.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.google/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -28034,5 +28038,5 @@ rules:
   - RULE-SET,lancidr,🇨🇳 全球直连
   - RULE-SET,private,🇨🇳 全球直连
   - RULE-SET,cncidr,🇨🇳 全球直连
-  - GEOIP,CN,🇨🇳 全球直连
+  - GEOIP,CN,🇨🇳 全球直连,no-resolve
   - MATCH,🐟 漏网之鱼
