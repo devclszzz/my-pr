@@ -27971,23 +27971,11 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/guowai.yaml"
     path: ./ruleset/guowai.yaml
     interval: 3600
-  host:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
-    path: ./ruleset/host.yaml
-    interval: 3600
   reject:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
-    interval: 3600
-  adLite:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/adLite.yaml"
-    path: ./ruleset/adLite.yaml
     interval: 3600
   privacy:
     type: http
@@ -28165,9 +28153,7 @@ rules:
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,guowai,REJECT
-  - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,adLite,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,zhihuAd,REJECT

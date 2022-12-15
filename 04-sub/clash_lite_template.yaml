@@ -28158,9 +28158,7 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
-  - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
-  - RULE-SET,adLite,REJECT
   - RULE-SET,privacy,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,zhihuAd,REJECT
