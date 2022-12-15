@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-[ ! -f smartdns ] && git clone https://github.com/pymumu/smartdns.git
+[ ! -d smartdns ] && git clone https://github.com/pymumu/smartdns.git
 
 if [ -d smartdns ];then
   cd smartdns
