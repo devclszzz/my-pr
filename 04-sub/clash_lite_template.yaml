@@ -27965,29 +27965,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🇨🇳 全球直连
 rule-providers:
-  host:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/host.yaml"
-    path: ./ruleset/host.yaml
-    interval: 3600
   reject:
     type: http
     behavior: domain
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
-    interval: 3600
-  adLite:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/adLite.yaml"
-    path: ./ruleset/adLite.yaml
-    interval: 3600
-  privacy:
-    type: http
-    behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/privacy.yaml"
-    path: ./ruleset/privacy.yaml
     interval: 3600
   rejectDiy:
     type: http
