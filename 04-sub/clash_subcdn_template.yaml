@@ -27757,7 +27757,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies:
       - 😁 主节点(AUTO)
       - 🇭🇰 香港(AUTO)
@@ -27771,7 +27771,7 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies:
       - 😁 主节点
       - 🇭🇰 香港
@@ -27785,91 +27785,91 @@ proxy-groups:
   - name: 😁 主节点(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 😁 主节点
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 😁 次节点(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 😁 次节点
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇭🇰 香港
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 🇹🇼 台湾(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇹🇼 台湾
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 🇯🇵 日本(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇯🇵 日本
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 🇸🇬 新加坡(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: 🇺🇸 美国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇺🇸 美国
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     proxies:
       - 💪 低倍率节点
       - 🚜 备用节点
@@ -27883,21 +27883,21 @@ proxy-groups:
   - name: 💪 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🚜 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 100
     proxies: [ ]
@@ -27990,7 +27990,7 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
-    interval: 90
+    interval: 60
   zhihuAd:
     type: http
     behavior: classical
@@ -28002,13 +28002,13 @@ rule-providers:
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
-    interval: 90
+    interval: 60
   allow-us:
     type: http
     behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
-    interval: 90
+    interval: 60
   iphone:
     type: http
     behavior: classical
