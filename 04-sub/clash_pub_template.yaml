@@ -27786,7 +27786,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🇭🇰 香港
     type: fallback
@@ -27798,7 +27798,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🇹🇼 台湾
     type: fallback
@@ -27810,7 +27810,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🇯🇵 日本
     type: fallback
@@ -27822,7 +27822,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: fallback
@@ -27834,7 +27834,7 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🇺🇸 美国
     type: fallback
@@ -27858,21 +27858,21 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🚜 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 300
     lazy: true
-    tolerance: 30
+    tolerance: 100
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
