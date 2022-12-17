@@ -27761,7 +27761,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies:
       - 🇭🇰 香港(AUTO)
       - 🇹🇼 台湾(AUTO)
@@ -27776,7 +27776,7 @@ proxy-groups:
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies:
       - 🇭🇰 香港
       - 🇹🇼 台湾
@@ -27791,88 +27791,88 @@ proxy-groups:
   - name: 🇭🇰 香港(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇭🇰 香港
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇹🇼 台湾(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇹🇼 台湾
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇯🇵 日本(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇯🇵 日本
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇸🇬 新加坡(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇰🇷 韩国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
+    interval: 60
     tolerance: 100
     proxies: [ ]
   - name: 🇰🇷 韩国
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇺🇸 美国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
+    interval: 60
     tolerance: 100
     proxies: [ ]
   - name: 🇺🇸 美国
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: 🇬🇧 英国(AUTO)
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
+    interval: 60
     tolerance: 100
     proxies: [ ]
   - name: 🇬🇧 英国
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies:
       - 💪 低倍率节点
       - 🚜 备用节点
@@ -27884,22 +27884,22 @@ proxy-groups:
   - name: 💪 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🚜 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 300
-    lazy: false
+    interval: 60
+    lazy: true
     tolerance: 100
     proxies: [ ]
   - name: 🍎 苹果服务
@@ -27945,7 +27945,7 @@ proxy-groups:
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     proxies:
       - 🇸🇬 新加坡
       - 🇹🇼 台湾

@@ -27739,6 +27739,7 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🔯 故障转移
       - ♻️ 自动选择
       - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
@@ -27756,7 +27757,6 @@ proxy-groups:
       - 🇬🇧 英国
       - ⭕ 其他
       - ⏬ 下载节点
-      - 🔯 故障转移
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
@@ -27765,6 +27765,7 @@ proxy-groups:
     proxies:
       - 😁 主节点(AUTO)
       - 🇭🇰 香港(AUTO)
+      - 😁 次节点(AUTO)
       - 🇹🇼 台湾(AUTO)
       - 🇯🇵 日本(AUTO)
       - 🇸🇬 新加坡(AUTO)
@@ -27781,6 +27782,7 @@ proxy-groups:
     proxies:
       - 😁 主节点
       - 🇭🇰 香港
+      - 😁 次节点
       - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇸🇬 新加坡
@@ -27794,7 +27796,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 😁 主节点
@@ -27806,7 +27808,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 😁 次节点
@@ -27818,7 +27820,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🇭🇰 香港
@@ -27830,7 +27832,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🇹🇼 台湾
@@ -27842,7 +27844,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🇯🇵 日本
@@ -27854,7 +27856,7 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🇸🇬 新加坡
@@ -27913,21 +27915,21 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🚜 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: ⭕ 其他
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
-    lazy: false
+    lazy: true
     tolerance: 0
     proxies: [ ]
   - name: 🍎 苹果服务
