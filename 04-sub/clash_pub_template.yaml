@@ -27740,6 +27740,7 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 🔯 故障转移
       - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
       - 🇹🇼 台湾(AUTO)
@@ -27756,7 +27757,6 @@ proxy-groups:
       - 🇬🇧 英国
       - ⭕ 其他
       - ⏬ 下载节点
-      - 🔯 故障转移
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
