@@ -27747,7 +27747,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies:
       - 🇭🇰 香港
@@ -27757,29 +27757,29 @@ proxy-groups:
       - 🇨🇳 全球直连
   - name: 🇭🇰 香港
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: http://1.1.1.1/generate_204
+    interval: 90
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: http://1.1.1.1/generate_204
+    interval: 90
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: http://1.1.1.1/generate_204
+    interval: 90
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: http://1.1.1.1/generate_204
+    interval: 90
     lazy: false
     tolerance: 50
     proxies: [ ]
@@ -27791,7 +27791,7 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies:
       - 🇯🇵 日本
@@ -27810,7 +27810,7 @@ proxy-groups:
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies: 
       - 📺 香港Media
@@ -27820,25 +27820,25 @@ proxy-groups:
   - name: 📺 香港Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies: [ ]
   - name: 📺 日本Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies: [ ]
   - name: 📺 新加坡Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies: [ ]
   - name: 📺 美国Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
+    interval: 60
     lazy: false
     proxies: [ ]
   - name: 🇨🇳 全球直连
