@@ -27946,10 +27946,22 @@ proxy-groups:
   - name: 🍎 苹果服务
     type: select
     proxies:
+      - 🍎 苹果服务(AUTO)
       - ⏬ 下载节点
       - 🚀 节点选择
       - 🇨🇳 全球直连
       - REJECT
+  - name: 🍎 苹果服务(AUTO)
+    type: select
+    proxies:
+      - 😁 次节点(AUTO)
+      - 😁 次节点
+      - 🚜 备用节点
+      - 🇭🇰 香港(AUTO)
+      - 🇭🇰 香港
+      - 🇹🇼 台湾(AUTO)
+      - 🇹🇼 台湾
+      - 🇨🇳 全球直连
   - name: 🎵 Tiktok
     type: select
     proxies:
