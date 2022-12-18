@@ -27801,9 +27801,9 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies:
-      - 😁 次节点
-      - ⛳ 低倍率节点
       - 🚑 备用节点
+      - ⛳ 低倍率节点
+      - 😁 次节点
       - 🇭🇰 香港
       - 🚒 流量包节点
   - name: ⛳ 低倍率节点
