@@ -27739,217 +27739,108 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🔯 故障转移
-      - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
-      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
-    proxies:
-      - 🇭🇰 香港(AUTO)
-      - 🇹🇼 台湾(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇰🇷 韩国(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - 🇨🇳 全球直连
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 300
     lazy: false
     proxies:
       - 🇭🇰 香港
-      - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国
       - 🇺🇸 美国
-      - 🇬🇧 英国
-      - ⭕ 其他
       - 🇨🇳 全球直连
-  - name: 🇭🇰 香港(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 100
-    proxies: [ ]
   - name: 🇭🇰 香港
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇹🇼 台湾(AUTO)
     type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 100
-    proxies: [ ]
-  - name: 🇹🇼 台湾
-    type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 300
     lazy: false
-    proxies: [ ]
-  - name: 🇯🇵 日本(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 100
+    tolerance: 50
     proxies: [ ]
   - name: 🇯🇵 日本
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇸🇬 新加坡(AUTO)
     type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
+    url: http://www.gstatic.com/generate_204
+    interval: 300
     lazy: false
-    tolerance: 100
+    tolerance: 50
     proxies: [ ]
   - name: 🇸🇬 新加坡
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇰🇷 韩国(AUTO)
     type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 100
-    proxies: [ ]
-  - name: 🇰🇷 韩国
-    type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 300
     lazy: false
-    proxies: [ ]
-  - name: 🇺🇸 美国(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 100
+    tolerance: 50
     proxies: [ ]
   - name: 🇺🇸 美国
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇬🇧 英国(AUTO)
     type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 100
-    proxies: [ ]
-  - name: 🇬🇧 英国
-    type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 300
     lazy: false
-    proxies: [ ]
-  - name: ⭕ 其他
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 100
+    tolerance: 50
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🇨🇳 全球直连
-      - REJECT
   - name: 🎵 Tiktok
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
     proxies:
-      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
-      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - 🚀 节点选择
       - REJECT
   - name: 📺 Netflix
     type: select
     proxies:
       - 📺 Media
-      - 🔯 故障转移
-      - 🇸🇬 新加坡
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - 🚀 节点选择
+      - 📺 香港Media
+      - 📺 日本Media
+      - 📺 新加坡Media
+      - 📺 美国Media
       - REJECT
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 300
     lazy: false
-    proxies:
-      - 🇸🇬 新加坡
-      - 🇹🇼 台湾
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇸 美国
-      - 🇬🇧 英国
-  - name: 🈲 Porn
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇭🇰 香港(AUTO)
-      - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡(AUTO)
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本(AUTO)
-      - 🇯🇵 日本
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
-      - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - REJECT
+    proxies: 
+      - 📺 香港Media
+      - 📺 日本Media
+      - 📺 新加坡Media
+      - 📺 美国Media
+  - name: 📺 香港Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+    proxies: [ ]
+  - name: 📺 日本Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+    proxies: [ ]
+  - name: 📺 新加坡Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+    proxies: [ ]
+  - name: 📺 美国Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+    proxies: [ ]
   - name: 🇨🇳 全球直连
     type: select
     proxies:
