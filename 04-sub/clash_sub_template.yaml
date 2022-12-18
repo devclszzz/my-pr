@@ -27738,44 +27738,13 @@ proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - 🔯 故障转移
       - ♻️ 自动选择
-      - 🇭🇰 香港(AUTO)
       - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
-      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
       - 🇨🇳 全球直连
   - name: ♻️ 自动选择
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies:
-      - 😁 主节点(AUTO)
-      - 🇭🇰 香港(AUTO)
-      - 😁 次节点(AUTO)
-      - 🇹🇼 台湾(AUTO)
-      - 🇯🇵 日本(AUTO)
-      - 🇸🇬 新加坡(AUTO)
-      - 🇰🇷 韩国(AUTO)
-      - 🇺🇸 美国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
-      - 🇨🇳 全球直连
-  - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
@@ -27784,34 +27753,15 @@ proxy-groups:
       - 😁 主节点
       - 🇭🇰 香港
       - 😁 次节点
-      - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国
       - 🇺🇸 美国
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
       - 🇨🇳 全球直连
-  - name: 😁 主节点(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
-    proxies: [ ]
   - name: 😁 主节点
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    proxies: [ ]
-  - name: 😁 次节点(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
     proxies: [ ]
   - name: 😁 次节点
     type: fallback
@@ -27819,38 +27769,11 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies: [ ]
-  - name: 🇭🇰 香港(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
-    proxies: [ ]
   - name: 🇭🇰 香港
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    proxies: [ ]
-  - name: 🇹🇼 台湾(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
-    proxies: [ ]
-  - name: 🇹🇼 台湾
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇯🇵 日本(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
     proxies: [ ]
   - name: 🇯🇵 日本
     type: fallback
@@ -27858,50 +27781,13 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies: [ ]
-  - name: 🇸🇬 新加坡(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: false
-    tolerance: 0
-    proxies: [ ]
   - name: 🇸🇬 新加坡
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
     proxies: [ ]
-  - name: 🇰🇷 韩国(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 0
-    proxies: [ ]
-  - name: 🇰🇷 韩国
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇺🇸 美国(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 0
-    proxies: [ ]
   - name: 🇺🇸 美国
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 🇬🇧 英国(AUTO)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    tolerance: 0
-    proxies: [ ]
-  - name: 🇬🇧 英国
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
@@ -27913,87 +27799,57 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies:
-      - 💪 低倍率节点
-      - 🚜 备用节点
-      - 😁 次节点(AUTO)
       - 😁 次节点
-      - 🇭🇰 香港(AUTO)
+      - ⛳ 低倍率节点
+      - 🚑 备用节点
       - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇨🇳 全球直连
-  - name: 💪 低倍率节点
+      - 🚒 流量包节点
+  - name: ⛳ 低倍率节点
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    tolerance: 0
+    tolerance: 50
     proxies: [ ]
-  - name: 🚜 备用节点
+  - name: 🚑 备用节点
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    tolerance: 0
+    tolerance: 50
     proxies: [ ]
-  - name: ⭕ 其他
+  - name: 🚒 流量包节点
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    tolerance: 0
+    tolerance: 50
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
     proxies:
-      - 🍎 苹果服务(AUTO)
       - ⏬ 下载节点
       - 🚀 节点选择
       - 🇨🇳 全球直连
       - REJECT
-  - name: 🍎 苹果服务(AUTO)
-    type: select
-    proxies:
-      - 😁 次节点(AUTO)
-      - 😁 次节点
-      - 🚜 备用节点
-      - 🇭🇰 香港(AUTO)
-      - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇨🇳 全球直连
   - name: 🎵 Tiktok
-    type: select
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: false
     proxies:
-      - 🇯🇵 日本(AUTO)
       - 🇯🇵 日本
-      - 🇸🇬 新加坡(AUTO)
       - 🇸🇬 新加坡
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
       - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
-      - 🚀 节点选择
       - REJECT
   - name: 📺 Netflix
     type: select
     proxies:
       - 📺 Media
-      - 🔯 故障转移
       - 🇸🇬 新加坡
       - 🇭🇰 香港
-      - 🇹🇼 台湾
       - 🇯🇵 日本
-      - 🇰🇷 韩国
       - 🇺🇸 美国
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
-      - 🚀 节点选择
       - REJECT
   - name: 📺 Media
     type: fallback
@@ -28002,33 +27858,14 @@ proxy-groups:
     lazy: false
     proxies:
       - 🇸🇬 新加坡
-      - 🇹🇼 台湾
       - 🇭🇰 香港
       - 🇯🇵 日本
-      - 🇰🇷 韩国
       - 🇺🇸 美国
-      - 🇬🇧 英国
   - name: 🈲 Porn
     type: select
     proxies:
-      - 🚀 节点选择
-      - 🇭🇰 香港(AUTO)
-      - 🇭🇰 香港
-      - 🇹🇼 台湾(AUTO)
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡(AUTO)
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本(AUTO)
-      - 🇯🇵 日本
-      - 🇰🇷 韩国(AUTO)
-      - 🇰🇷 韩国
-      - 🇺🇸 美国(AUTO)
-      - 🇺🇸 美国
-      - 🇬🇧 英国(AUTO)
-      - 🇬🇧 英国
-      - ⭕ 其他
-      - ⏬ 下载节点
       - REJECT
+      - 🚀 节点选择
   - name: 🇨🇳 全球直连
     type: select
     proxies:
@@ -28039,29 +27876,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🇨🇳 全球直连
 rule-providers:
-  guowai:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/guowai.yaml"
-    path: ./ruleset/guowai.yaml
-    interval: 3600
-  host:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/host.yaml"
-    path: ./ruleset/host.yaml
-    interval: 3600
   reject:
     type: http
     behavior: domain
     url: "https://sub.mingle666.top/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
-    interval: 3600
-  privacy:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/privacy.yaml"
-    path: ./ruleset/privacy.yaml
     interval: 3600
   rejectDiy:
     type: http
@@ -28069,12 +27888,6 @@ rule-providers:
     url: "https://sub.mingle666.top/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 60
-  zhihuAd:
-    type: http
-    behavior: classical
-    url: "https://sub.mingle666.top/01-rule/zhihu-ad.yaml"
-    path: ./ruleset/zhihu-ad.yaml
-    interval: 3600
   allow-cn:
     type: http
     behavior: classical
@@ -28203,11 +28016,7 @@ rules:
   - RULE-SET,allow-cn,🇨🇳 全球直连
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,reject,REJECT
-  - RULE-SET,guowai,REJECT
-  - RULE-SET,host,REJECT
-  - RULE-SET,privacy,REJECT
   - RULE-SET,rejectDiy,REJECT
-  - RULE-SET,zhihuAd,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
