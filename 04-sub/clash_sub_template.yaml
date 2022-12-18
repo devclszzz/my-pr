@@ -27859,9 +27859,9 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies:
+      - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇯🇵 日本
-      - 🇸🇬 新加坡
       - 🇺🇸 美国
   - name: 🈲 Porn
     type: select

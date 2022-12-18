@@ -27812,10 +27812,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: false
-    proxies: 
+    proxies:
+      - 📺 新加坡Media
       - 📺 香港Media
       - 📺 日本Media
-      - 📺 新加坡Media
       - 📺 美国Media
   - name: 📺 香港Media
     type: fallback
