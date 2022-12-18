@@ -27743,7 +27743,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇨🇳 全球直连
+      - DIRECT
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -27756,7 +27756,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇨🇳 全球直连
+      - DIRECT
   - name: 😁 主节点
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -27830,7 +27830,7 @@ proxy-groups:
     proxies:
       - ⏬ 下载节点
       - 🚀 节点选择
-      - 🇨🇳 全球直连
+      - DIRECT
       - REJECT
   - name: 🎵 Tiktok
     type: fallback
@@ -27866,15 +27866,6 @@ proxy-groups:
     proxies:
       - REJECT
       - 🚀 节点选择
-  - name: 🇨🇳 全球直连
-    type: select
-    proxies:
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇨🇳 全球直连
 rule-providers:
   reject:
     type: http
@@ -28013,7 +28004,7 @@ rules:
   - DOMAIN,doh.opendns.com,🚀 节点选择
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
-  - RULE-SET,allow-cn,🇨🇳 全球直连
+  - RULE-SET,allow-cn,DIRECT
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,reject,REJECT
   - RULE-SET,rejectDiy,REJECT
@@ -28029,8 +28020,8 @@ rules:
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,microsoft,🚀 节点选择
-  - RULE-SET,lancidr,🇨🇳 全球直连
-  - RULE-SET,private,🇨🇳 全球直连
-  - RULE-SET,cncidr,🇨🇳 全球直连
-  - GEOIP,CN,🇨🇳 全球直连,no-resolve
-  - MATCH,🐟 漏网之鱼
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - MATCH,🚀 节点选择

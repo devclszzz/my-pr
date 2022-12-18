@@ -27743,7 +27743,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇨🇳 全球直连
+      - DIRECT
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -27754,7 +27754,7 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
-      - 🇨🇳 全球直连
+      - DIRECT
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -27787,7 +27787,7 @@ proxy-groups:
     type: select
     proxies:
       - 🚀 节点选择
-      - 🇨🇳 全球直连
+      - DIRECT
   - name: 🎵 Tiktok
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -27841,15 +27841,6 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies: [ ]
-  - name: 🇨🇳 全球直连
-    type: select
-    proxies:
-      - DIRECT
-  - name: 🐟 漏网之鱼
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🇨🇳 全球直连
 rule-providers:
   reject:
     type: http
@@ -27946,8 +27937,8 @@ rules:
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,microsoft,🚀 节点选择
-  - RULE-SET,lancidr,🇨🇳 全球直连
-  - RULE-SET,private,🇨🇳 全球直连
-  - RULE-SET,cncidr,🇨🇳 全球直连
-  - GEOIP,CN,🇨🇳 全球直连,no-resolve
-  - MATCH,🐟 漏网之鱼
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - MATCH,🚀 节点选择
