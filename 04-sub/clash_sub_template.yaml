@@ -27754,45 +27754,57 @@ proxy-groups:
       - 😁 主节点
       - 🇭🇰 香港
       - 😁 次节点
+      - 📺 香港Media
       - 🇯🇵 日本
+      - 📺 日本Media
+      - 📺 新加坡Media
       - 🇸🇬 新加坡
       - ⏬ 下载节点
       - 🇺🇸 美国
+      - 📺 美国Media
       - DIRECT
   - name: 😁 主节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
+    tolerance: 3000
     proxies: [ ]
   - name: 😁 次节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
+    tolerance: 3000
     proxies: [ ]
   - name: 🇭🇰 香港
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
+    tolerance: 3000
     proxies: [ ]
   - name: 🇯🇵 日本
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
+    tolerance: 3000
     proxies: [ ]
   - name: 🇸🇬 新加坡
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
+    lazy: false
+    tolerance: 3000
     lazy: false
     proxies: [ ]
   - name: 🇺🇸 美国
-    type: fallback
-    url: http://www.gstatic.com/generate_204
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
+    lazy: false
+    tolerance: 3000
     lazy: false
     proxies: [ ]
   - name: ⏬ 下载节点
@@ -27808,24 +27820,24 @@ proxy-groups:
       - 🚒 流量包节点
   - name: ⛳ 低倍率节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 50
+    tolerance: 3000
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 50
+    tolerance: 3000
     proxies: [ ]
   - name: 🚒 流量包节点
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 50
+    tolerance: 3000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
@@ -27848,10 +27860,10 @@ proxy-groups:
     type: select
     proxies:
       - 📺 Media
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇸🇬 新加坡
-      - 🇺🇸 美国
+      - 📺 香港Media
+      - 📺 日本Media
+      - 📺 新加坡Media
+      - 📺 美国Media
       - REJECT
   - name: 📺 Media
     type: fallback
@@ -27859,10 +27871,34 @@ proxy-groups:
     interval: 60
     lazy: false
     proxies:
-      - 🇸🇬 新加坡
-      - 🇭🇰 香港
-      - 🇯🇵 日本
-      - 🇺🇸 美国
+      - 📺 新加坡Media
+      - 📺 香港Media
+      - 📺 日本Media
+      - 📺 美国Media
+  - name: 📺 香港Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: false
+    proxies: [ ]
+  - name: 📺 日本Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: false
+    proxies: [ ]
+  - name: 📺 新加坡Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: false
+    proxies: [ ]
+  - name: 📺 美国Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: false
+    proxies: [ ]
   - name: 🈲 Porn
     type: select
     proxies:
