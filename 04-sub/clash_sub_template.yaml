@@ -27742,7 +27742,6 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇯🇵 日本
       - 🇸🇬 新加坡
-      - ⏬ 下载节点
       - 🇺🇸 美国
       - DIRECT
   - name: ♻️ 自动选择
@@ -27807,12 +27806,13 @@ proxy-groups:
     interval: 90
     lazy: false
     proxies:
+      - 🛫 极速下载
       - 🚑 备用节点
       - ⛳ 低倍率节点
       - 😁 次节点
       - 🇭🇰 香港
-      - 🚒 流量包节点
-  - name: ⛳ 低倍率节点
+      - 🚀 节点选择
+  - name: 🛫 极速下载
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
@@ -27820,6 +27820,13 @@ proxy-groups:
     tolerance: 8000
     proxies: [ ]
   - name: 🚑 备用节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
+    interval: 90
+    lazy: false
+    tolerance: 8000
+    proxies: [ ]
+  - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
