@@ -27764,28 +27764,28 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 3000
+    tolerance: 5000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 3000
+    tolerance: 5000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 3000
+    tolerance: 5000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
     lazy: false
-    tolerance: 3000
+    tolerance: 5000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
