@@ -27747,45 +27747,41 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
       - 🇭🇰 香港
-      - 📺 香港Media
       - 🇯🇵 日本
-      - 📺 日本Media
       - 🇸🇬 新加坡
-      - 📺 新加坡Media
       - 🇺🇸 美国
-      - 📺 美国Media
       - DIRECT
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
@@ -27795,7 +27791,7 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
       - 🇯🇵 日本
@@ -27806,45 +27802,21 @@ proxy-groups:
     type: select
     proxies:
       - 📺 Media
-      - 📺 香港Media
-      - 📺 日本Media
-      - 📺 新加坡Media
-      - 📺 美国Media
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇺🇸 美国
       - REJECT
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
-      - 📺 新加坡Media
-      - 📺 香港Media
-      - 📺 日本Media
-      - 📺 美国Media
-  - name: 📺 香港Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 日本Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 新加坡Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 美国Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇺🇸 美国
 rule-providers:
   reject:
     type: http
