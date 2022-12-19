@@ -27881,6 +27881,18 @@ proxy-groups:
       - REJECT
       - 🚀 节点选择
 rule-providers:
+  guowai:
+    type: http
+    behavior: classical
+    url: "https://sub.mingle666.top/01-rule/guowai.yaml"
+    path: ./ruleset/guowai.yaml
+    interval: 3600
+  host:
+    type: http
+    behavior: classical
+    url: "https://sub.mingle666.top/01-rule/host.yaml"
+    path: ./ruleset/host.yaml
+    interval: 3600
   reject:
     type: http
     behavior: domain
@@ -28020,6 +28032,8 @@ rules:
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,allow-cn,DIRECT
   - RULE-SET,allow-us,🚀 节点选择
+  - RULE-SET,guowai,REJECT
+  - RULE-SET,host,REJECT
   - RULE-SET,reject,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,iphone,🍎 苹果服务
