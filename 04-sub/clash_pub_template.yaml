@@ -27751,35 +27751,39 @@ proxy-groups:
     lazy: false
     proxies:
       - 🇭🇰 香港
+      - 📺 香港Media
       - 🇯🇵 日本
+      - 📺 日本Media
       - 🇸🇬 新加坡
+      - 📺 新加坡Media
       - 🇺🇸 美国
+      - 📺 美国Media
       - DIRECT
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 600
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 600
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 600
     lazy: false
     tolerance: 50
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 600
     lazy: false
     tolerance: 50
     proxies: [ ]
