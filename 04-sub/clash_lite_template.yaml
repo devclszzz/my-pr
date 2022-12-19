@@ -27763,42 +27763,42 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 😁 次节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
@@ -27816,28 +27816,28 @@ proxy-groups:
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🚒 流量包节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
-    tolerance: 8000
+    tolerance: 10000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
