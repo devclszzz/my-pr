@@ -27748,69 +27748,63 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
       - 😁 主节点
       - 🇭🇰 香港
       - 😁 次节点
-      - 📺 香港Media
       - 🇯🇵 日本
-      - 📺 日本Media
-      - 📺 新加坡Media
       - 🇸🇬 新加坡
       - ⏬ 下载节点
       - 🇺🇸 美国
-      - 📺 美国Media
       - DIRECT
   - name: 😁 主节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 😁 次节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
-    lazy: false
+    tolerance: 8000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
-    lazy: false
+    tolerance: 8000
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
       - 🚑 备用节点
@@ -27821,23 +27815,23 @@ proxy-groups:
   - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🚒 流量包节点
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 60
+    interval: 90
     lazy: false
-    tolerance: 5000
+    tolerance: 8000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
@@ -27849,7 +27843,7 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
       - 🇯🇵 日本
@@ -27860,45 +27854,21 @@ proxy-groups:
     type: select
     proxies:
       - 📺 Media
-      - 📺 香港Media
-      - 📺 日本Media
-      - 📺 新加坡Media
-      - 📺 美国Media
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇺🇸 美国
       - REJECT
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 60
+    interval: 90
     lazy: false
     proxies:
-      - 📺 新加坡Media
-      - 📺 香港Media
-      - 📺 日本Media
-      - 📺 美国Media
-  - name: 📺 香港Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 日本Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 新加坡Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
-  - name: 📺 美国Media
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: false
-    proxies: [ ]
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇯🇵 日本
+      - 🇺🇸 美国
   - name: 🈲 Porn
     type: select
     proxies:
@@ -27916,19 +27886,19 @@ rule-providers:
     behavior: classical
     url: "https://sub.mingle666.top/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
-    interval: 60
+    interval: 90
   allow-cn:
     type: http
     behavior: classical
     url: "https://sub.mingle666.top/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
-    interval: 60
+    interval: 90
   allow-us:
     type: http
     behavior: classical
     url: "https://sub.mingle666.top/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
-    interval: 60
+    interval: 90
   iphone:
     type: http
     behavior: classical
