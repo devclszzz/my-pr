@@ -10,6 +10,14 @@ profile:
   tracing: true
   store-selected: false
   store-fake-ip: true
+tun:
+  enable: true
+  #    stack: gvisor
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
 dns:
   enable: true
   ipv6: false
