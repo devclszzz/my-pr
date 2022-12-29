@@ -1,4 +1,4 @@
-# total size:96111
+# total size:96110
 acjbottomline.com
 digitech-quantum.com
 www.8184.cc
@@ -29937,7 +29937,6 @@ happylifeconsult.com
 housekitchen.fr
 linkedads.de
 ads.nordichardware.se
-dzt1km7tv28ex.cloudfront.net
 zakengineering.com
 mediax.angloinfo.com
 orkeye.com
