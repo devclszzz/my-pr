@@ -27900,115 +27900,115 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/reject.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
     interval: 3600
   rejectDiy:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/reject-diy.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-diy.yaml"
     path: ./ruleset/reject-diy.yaml
     interval: 90
   allow-cn:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/allow-cn.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-cn.yaml"
     path: ./ruleset/allow-cn.yaml
     interval: 90
   allow-us:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/allow-us.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-us.yaml"
     path: ./ruleset/mingle-allow-us.yaml
     interval: 90
   iphone:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/iphone.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/iphone.yaml"
     path: ./ruleset/iphone.yaml
     interval: 3600
   apple:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/apple.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/apple.yaml"
     path: ./ruleset/apple.yaml
     interval: 3600
   icloud:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/icloud.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/icloud.yaml"
     path: ./ruleset/icloud.yaml
     interval: 3600
   porn:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/porn.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/porn.yaml"
     path: ./ruleset/porn.yaml
     interval: 3600
   download:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/download.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/download.yaml"
     path: ./ruleset/download.yaml
     interval: 3600
   telegram:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/telegram.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/telegram.yaml"
     path: ./ruleset/telegram.yaml
     interval: 3600
   tiktok:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/tiktok.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/tiktok.yaml"
     path: ./ruleset/tiktok.yaml
     interval: 3600
   nf:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/nf.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/nf.yaml"
     path: ./ruleset/nf.yaml
     interval: 3600
   gfw:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/gfw.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/gfw.yaml"
     path: ./ruleset/gfw.yaml
     interval: 3600
   greatfire:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/greatfire.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/greatfire.yaml"
     path: ./ruleset/greatfire.yaml
     interval: 3600
   proxy:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/proxy.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/proxy.yaml"
     path: ./ruleset/proxy.yaml
     interval: 3600
   microsoft:
     type: http
     behavior: classical
-    url: "https://sub.mingle666.top/01-rule/microsoft.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/microsoft.yaml"
     path: ./ruleset/microsoft.yaml
     interval: 3600
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://sub.mingle666.top/01-rule/lancidr.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/lancidr.yaml"
     path: ./ruleset/lancidr.yaml
     interval: 3600
   private:
     type: http
     behavior: domain
-    url: "https://sub.mingle666.top/01-rule/private.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/private.yaml"
     path: ./ruleset/private.yaml
     interval: 3600
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://sub.mingle666.top/01-rule/cncidr.yaml"
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
 rules:
