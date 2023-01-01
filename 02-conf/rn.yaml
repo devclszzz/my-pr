@@ -1,20 +1,20 @@
 proxies:
-  - name: USA-mingle03
-    server: devcdn.mingle666.top
-    port: 443
+  - name: USA-mingle01
+    server: sub.mingle666.top
+    port: 64001
     type: trojan
     password: zjm123123
-    sni: devcdn.mingle666.top
+    sni: sub.mingle666.top
     skip-cert-verify: true
     udp: true
     network: ws
     ws-opts:
       path: /zjm123123
       headers:
-        host: devcdn.mingle666.top
-  - name: USA-mingle04
+        host: sub.mingle666.top
+  - name: USA-mingle02
     type: vmess
-    server: devcdn.mingle666.top
+    server: sub.mingle666.top
     port: 443
     uuid: f2eae96c-f97f-48af-a1f4-e60f29110606
     alterId: 0
@@ -22,9 +22,9 @@ proxies:
     udp: true
     tls: true
     skip-cert-verify: true
-    servername: devcdn.mingle666.top
+    servername: sub.mingle666.top
     network: ws
     ws-opts:
       path: /vmesswszjm123123
       headers:
-        Host: devcdn.mingle666.top
+        Host: sub.mingle666.top
