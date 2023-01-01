@@ -15,7 +15,7 @@ proxies:
   - name: USA-mingle02
     type: vmess
     server: sub.mingle666.top
-    port: 443
+    port: 64001
     uuid: f2eae96c-f97f-48af-a1f4-e60f29110606
     alterId: 0
     cipher: auto
