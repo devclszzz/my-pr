@@ -27822,9 +27822,9 @@ proxy-groups:
     interval: 90
     lazy: false
     proxies:
+      - ⛳ 低倍率节点
       - 🛫 极速下载
       - 🚑 备用节点
-      - ⛳ 低倍率节点
       - 😁 次节点
       - 🇭🇰 香港
   - name: 🛫 极速下载
