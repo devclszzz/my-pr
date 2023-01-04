@@ -27823,8 +27823,8 @@ proxy-groups:
     lazy: false
     proxies:
       - 🛫 极速下载
-      - 🚑 备用节点
       - ⛳ 低倍率节点
+      - 🚑 备用节点
       - 😁 次节点
       - 🇭🇰 香港
   - name: 🛫 极速下载
@@ -27834,14 +27834,14 @@ proxy-groups:
     lazy: false
     tolerance: 10000
     proxies: [ ]
-  - name: 🚑 备用节点
+  - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
     lazy: false
     tolerance: 10000
     proxies: [ ]
-  - name: ⛳ 低倍率节点
+  - name: 🚑 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
