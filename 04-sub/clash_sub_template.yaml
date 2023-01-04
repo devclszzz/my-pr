@@ -27764,7 +27764,7 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     proxies:
       - 😁 主节点
       - 🇭🇰 香港
@@ -27778,49 +27778,49 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 😁 次节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: ⏬ 下载节点
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     proxies:
       - 🛫 极速下载
       - ⛳ 低倍率节点
@@ -27831,28 +27831,28 @@ proxy-groups:
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🚒 流量包节点
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🍎 苹果服务
@@ -27866,7 +27866,7 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     proxies:
       - 🇯🇵 日本
       - 🇸🇬 新加坡
@@ -27885,7 +27885,7 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 90
-    lazy: false
+    lazy: true
     proxies:
       - 🇸🇬 新加坡
       - 🇭🇰 香港
