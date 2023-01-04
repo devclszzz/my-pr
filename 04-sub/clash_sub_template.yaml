@@ -39,11 +39,15 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
+    - https://8.8.8.8/dns-query
+    - https://8.8.4.4/dns-query
+    - https://dns.google/dns-query
     - https://101.101.101.101/dns-query
     - https://dns.twnic.tw/dns-query
     - https://public.dns.iij.jp/dns-query
     - https://dns.cloudflare.com/dns-query
     - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
   fake-ip-filter:
     - "*.lan"
     - stun.*.*.*
