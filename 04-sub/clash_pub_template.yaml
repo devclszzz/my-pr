@@ -27768,7 +27768,7 @@ proxy-groups:
   - name: ♻️ 自动选择
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     proxies:
       - 🇭🇰 香港
@@ -27780,35 +27780,35 @@ proxy-groups:
   - name: 🇭🇰 香港
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🛫 极速下载
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 10000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
     url: http://1.1.1.1/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     tolerance: 10000
     proxies: [ ]
@@ -27820,7 +27820,7 @@ proxy-groups:
   - name: 🎵 Tiktok
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     proxies:
       - 🇯🇵 日本
@@ -27839,7 +27839,7 @@ proxy-groups:
   - name: 📺 Media
     type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 90
+    interval: 60
     lazy: true
     proxies:
       - 🇸🇬 新加坡
