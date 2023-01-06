@@ -27834,17 +27834,24 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - 🛫 极速下载（AUTO）
       - 🛫 极速下载
       - ⛳ 低倍率节点
       - 🚑 备用节点
       - 😁 次节点
       - 🇭🇰 香港
-  - name: 🛫 极速下载
+  - name: 🛫 极速下载（AUTO）
     type: url-test
     url: http://1.1.1.1/generate_204
     interval: 60
     lazy: true
     tolerance: 15000
+    proxies: [ ]
+  - name: 🛫 极速下载
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
     proxies: [ ]
   - name: ⛳ 低倍率节点
     type: url-test
