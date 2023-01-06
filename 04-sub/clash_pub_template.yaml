@@ -27771,8 +27771,8 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - 🇭🇰 香港
       - 🇭🇰 香港(自动)
+      - 🇭🇰 香港
       - 🛫 极速下载
       - 🇯🇵 日本
       - 🇸🇬 新加坡
