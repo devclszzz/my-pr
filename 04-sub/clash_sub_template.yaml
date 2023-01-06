@@ -27834,9 +27834,9 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - ⛳ 低倍率节点
       - 🛫 极速下载（AUTO）
       - 🛫 极速下载
-      - ⛳ 低倍率节点
       - 🚑 备用节点
       - 😁 次节点
       - 🇭🇰 香港
