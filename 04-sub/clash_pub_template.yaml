@@ -27771,54 +27771,46 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - 🇭🇰 香港(自动)
       - 🇭🇰 香港
       - 🛫 极速下载
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
       - DIRECT
-  - name: 🇭🇰 香港(自动)
-    type: url-test
-    url: http://1.1.1.1/generate_204
-    interval: 60
-    lazy: true
-    tolerance: 15000
-    proxies: [ ]
   - name: 🇭🇰 香港
-    type: fallback
+    type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
-    tolerance: 15000
+    tolerance: 8000
     proxies: [ ]
   - name: 🛫 极速下载
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
-    tolerance: 15000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
-    tolerance: 15000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
-    tolerance: 15000
+    tolerance: 8000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
-    tolerance: 15000
+    tolerance: 8000
     proxies: [ ]
   - name: 🍎 苹果服务
     type: select
