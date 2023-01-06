@@ -27770,6 +27770,7 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
+      - 😁 主节点(自动)
       - 😁 主节点
       - 🇭🇰 香港
       - 😁 次节点
@@ -27778,9 +27779,16 @@ proxy-groups:
       - ⏬ 下载节点
       - 🇺🇸 美国
       - DIRECT
-  - name: 😁 主节点
+  - name: 😁 主节点(自动)
     type: url-test
     url: http://1.1.1.1/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 15000
+    proxies: [ ]
+  - name: 😁 主节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
     tolerance: 15000
