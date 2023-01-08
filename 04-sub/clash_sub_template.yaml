@@ -28049,6 +28049,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/bilibili.yaml"
     path: ./ruleset/bilibili.yaml
     interval: 3600
+  ximalaya:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/ximalaya.yaml"
+    path: ./ruleset/ximalaya.yaml
+    interval: 3600
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
@@ -28090,6 +28096,7 @@ rules:
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
   - RULE-SET,bilibili,📺 B站
+  - RULE-SET,ximalaya,📺 B站
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,cncidr,DIRECT
