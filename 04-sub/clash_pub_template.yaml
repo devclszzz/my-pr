@@ -27761,6 +27761,7 @@ proxy-groups:
       - ♻️ 自动选择
       - 🇭🇰 香港
       - 🛫 极速下载
+      - 🚑 备用节点
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
@@ -27774,6 +27775,7 @@ proxy-groups:
       - 🇭🇰 香港
       - 🇹🇼 台湾
       - 🛫 极速下载
+      - 🚑 备用节点
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
@@ -27795,6 +27797,13 @@ proxy-groups:
   - name: 🛫 极速下载
     type: url-test
     url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🚑 备用节点
+    type: url-test
+    url: http://1.1.1.1/generate_204
     interval: 60
     lazy: true
     tolerance: 8000

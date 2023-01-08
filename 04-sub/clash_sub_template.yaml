@@ -27864,6 +27864,7 @@ proxy-groups:
     lazy: true
     proxies:
       - 😁 次节点
+      - 😁 主节点
       - ⛳ 低倍率节点
       - 🛫 极速下载
       - 🚑 备用节点
