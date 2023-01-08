@@ -27829,18 +27829,6 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
-  - name: ⏬ 下载节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: true
-    proxies:
-      - 😁 次节点
-      - ⛳ 低倍率节点
-      - 🛫 极速下载
-      - 🚑 备用节点
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
   - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -27869,6 +27857,18 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
+  - name: ⏬ 下载节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 😁 次节点
+      - ⛳ 低倍率节点
+      - 🛫 极速下载
+      - 🚑 备用节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
   - name: 🍎 苹果服务
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -27912,6 +27912,11 @@ proxy-groups:
       - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇺🇸 美国
+  - name: 📺 B站
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🈲 Porn
     type: select
     proxies:
@@ -28032,6 +28037,24 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
+  xiaohongshu:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/xiaohongshu.yaml"
+    path: ./ruleset/xiaohongshu.yaml
+    interval: 3600
+  bilibili:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/bilibili.yaml"
+    path: ./ruleset/bilibili.yaml
+    interval: 3600
+  ximalaya:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/ximalaya.yaml"
+    path: ./ruleset/ximalaya.yaml
+    interval: 3600
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
@@ -28059,6 +28082,7 @@ rules:
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,reject,REJECT
   - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,xiaohongshu,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
@@ -28071,6 +28095,8 @@ rules:
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,bilibili,📺 B站
+  - RULE-SET,ximalaya,📺 B站
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,cncidr,DIRECT
