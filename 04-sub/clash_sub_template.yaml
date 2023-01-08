@@ -27829,18 +27829,6 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
-  - name: ⏬ 下载节点
-    type: fallback
-    url: http://www.gstatic.com/generate_204
-    interval: 60
-    lazy: true
-    proxies:
-      - 😁 次节点
-      - ⛳ 低倍率节点
-      - 🛫 极速下载
-      - 🚑 备用节点
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
   - name: ⛳ 低倍率节点
     type: url-test
     url: http://1.1.1.1/generate_204
@@ -27869,6 +27857,18 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
+  - name: ⏬ 下载节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 😁 次节点
+      - ⛳ 低倍率节点
+      - 🛫 极速下载
+      - 🚑 备用节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
   - name: 🍎 苹果服务
     type: fallback
     url: http://www.gstatic.com/generate_204
