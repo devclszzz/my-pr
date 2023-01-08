@@ -28032,6 +28032,18 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
     path: ./ruleset/cncidr.yaml
     interval: 3600
+  xiaohongshu:
+    type: classical
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/xiaohongshu.yaml"
+    path: ./ruleset/xiaohongshu.yaml
+    interval: 3600
+  bilibili:
+    type: classical
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/bilibili.yaml"
+    path: ./ruleset/bilibili.yaml
+    interval: 3600
 rules:
   - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
   - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
@@ -28059,6 +28071,8 @@ rules:
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,reject,REJECT
   - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,xiaohongshu,REJECT
+  - RULE-SET,bilibili,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
