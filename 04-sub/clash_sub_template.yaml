@@ -28033,14 +28033,14 @@ rule-providers:
     path: ./ruleset/cncidr.yaml
     interval: 3600
   xiaohongshu:
-    type: classical
-    behavior: ipcidr
+    type: http
+    behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/xiaohongshu.yaml"
     path: ./ruleset/xiaohongshu.yaml
     interval: 3600
   bilibili:
-    type: classical
-    behavior: ipcidr
+    type: http
+    behavior: classical
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/bilibili.yaml"
     path: ./ruleset/bilibili.yaml
     interval: 3600
