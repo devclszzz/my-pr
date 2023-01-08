@@ -27912,6 +27912,11 @@ proxy-groups:
       - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇺🇸 美国
+  - name: 📺 B站
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🈲 Porn
     type: select
     proxies:
@@ -28072,7 +28077,6 @@ rules:
   - RULE-SET,reject,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,xiaohongshu,REJECT
-  - RULE-SET,bilibili,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,apple,🍎 苹果服务
   - RULE-SET,icloud,🍎 苹果服务
@@ -28085,6 +28089,7 @@ rules:
   - RULE-SET,gfw,🚀 节点选择
   - RULE-SET,greatfire,🚀 节点选择
   - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,bilibili,📺 B站
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,private,DIRECT
   - RULE-SET,cncidr,DIRECT
