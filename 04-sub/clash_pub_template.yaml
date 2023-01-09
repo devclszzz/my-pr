@@ -27789,7 +27789,7 @@ proxy-groups:
     proxies: [ ]
   - name: 🇹🇼 台湾
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
     tolerance: 8000
@@ -27803,7 +27803,7 @@ proxy-groups:
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
-    url: http://1.1.1.1/generate_204
+    url: http://www.gstatic.com/generate_204
     interval: 60
     lazy: true
     tolerance: 8000
