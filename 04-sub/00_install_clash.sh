@@ -15,6 +15,8 @@ pushd clash-tun
 
 bash deploy_clash.sh
 
+test `command -v docker` && bash deploy_docker_clash.sh
+
 popd
 
 rm -rf clash-tun*
