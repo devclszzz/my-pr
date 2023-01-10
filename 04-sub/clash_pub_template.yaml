@@ -27762,7 +27762,7 @@ proxy-groups:
       - DIRECT
   - name: ♻️ 自动选择
     type: fallback
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     proxies:
@@ -27776,49 +27776,49 @@ proxy-groups:
       - DIRECT
   - name: 🇭🇰 香港
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🇹🇼 台湾
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🛫 极速下载
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🚑 备用节点
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🇯🇵 日本
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🇸🇬 新加坡
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
     proxies: [ ]
   - name: 🇺🇸 美国
     type: url-test
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     tolerance: 8000
@@ -27830,7 +27830,7 @@ proxy-groups:
       - DIRECT
   - name: 🎵 Tiktok
     type: fallback
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     proxies:
@@ -27849,7 +27849,7 @@ proxy-groups:
       - REJECT
   - name: 📺 Media
     type: fallback
-    url: http://www.google.com
+    url: https://www.google.com
     interval: 60
     lazy: true
     proxies:
