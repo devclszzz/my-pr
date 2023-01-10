@@ -1,0 +1,517 @@
+mixed-port: 17890
+allow-lan: false
+mode: Rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+  store-selected: false
+  store-fake-ip: true
+tun:
+  enable: false
+  #    stack: gvisor
+  stack: system
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+    - any:53
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+    - 101.101.101.101
+    - 1.1.1.1
+    - 1.0.0.1
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://1.12.12.12/dns-query
+    - https://120.53.53.53/dns-query
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  fallback:
+    - 'https://8.8.8.8/dns-query#♻️ 自动选择'
+    - 'https://8.8.4.4/dns-query#♻️ 自动选择'
+    - 'https://dns.google/dns-query#♻️ 自动选择'
+    - 'https://101.101.101.101/dns-query#♻️ 自动选择'
+    - 'https://dns.twnic.tw/dns-query#♻️ 自动选择'
+    - 'https://public.dns.iij.jp/dns-query#♻️ 自动选择'
+    - 'https://dns.cloudflare.com/dns-query#♻️ 自动选择'
+    - 'https://1.1.1.1/dns-query#♻️ 自动选择'
+    - 'https://1.0.0.1/dns-query#♻️ 自动选择'
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    geosite:
+      - geolocation-!cn
+      - gfw
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.88.99.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+      - 8.8.8.8/32
+      - 8.8.4.4/32
+      - 1.1.1.1/32
+      - 1.0.0.1/32
+      - 9.9.9.9/32
+      - 4.2.2.1/32
+      - 101.101.101.101/32
+    domain:
+      - "+.dns.nextdns.io"
+      - "+.hk-hkg.doh.sb"
+      - "+.dns.cloudflare.com"
+      - "+.dns.google"
+      - "+.dns.twnic.tw"
+      - "+.dns.google"
+      - "+.public.dns.iij.jp"
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.githubusercontent.com"
+proxies: [ ]
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - DIRECT
+  - name: ♻️ 自动选择
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 😁 主节点
+      - 🇭🇰 香港
+      - 😁 次节点
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - ⏬ 下载节点
+      - 🇺🇸 美国
+      - DIRECT
+  - name: 😁 主节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 😁 次节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🇭🇰 香港
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🇹🇼 台湾
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🇯🇵 日本
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🇸🇬 新加坡
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🇺🇸 美国
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: ⛳ 低倍率节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🛫 极速下载
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🚑 备用节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🚒 流量包节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: ⏬ 下载节点
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 😁 次节点
+      - 😁 主节点
+      - ⛳ 低倍率节点
+      - 🛫 极速下载
+      - 🚑 备用节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+  - name: 🍎 苹果服务
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 😁 次节点
+      - 😁 主节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - ⏬ 下载节点
+      - DIRECT
+  - name: 🎵 Tiktok
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
+      - REJECT
+  - name: 📺 Netflix
+    type: select
+    proxies:
+      - 📺 Media
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇺🇸 美国
+      - REJECT
+  - name: 📺 Media
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    lazy: true
+    proxies:
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇯🇵 日本
+      - 🇺🇸 美国
+  - name: 📺 B站
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🈲 Porn
+    type: select
+    proxies:
+      - REJECT
+      - 🚀 节点选择
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
+    path: ./ruleset/reject.yaml
+    interval: 3600
+  rejectDiy:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject-diy.yaml"
+    path: ./ruleset/reject-diy.yaml
+    interval: 60
+  allow-cn:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-cn.yaml"
+    path: ./ruleset/allow-cn.yaml
+    interval: 60
+  allow-us:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/allow-us.yaml"
+    path: ./ruleset/mingle-allow-us.yaml
+    interval: 60
+  iphone:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/iphone.yaml"
+    path: ./ruleset/iphone.yaml
+    interval: 3600
+  apple:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/apple.yaml"
+    path: ./ruleset/apple.yaml
+    interval: 3600
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/icloud.yaml"
+    path: ./ruleset/icloud.yaml
+    interval: 3600
+  porn:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/porn.yaml"
+    path: ./ruleset/porn.yaml
+    interval: 3600
+  download:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/download.yaml"
+    path: ./ruleset/download.yaml
+    interval: 3600
+  telegram:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/telegram.yaml"
+    path: ./ruleset/telegram.yaml
+    interval: 3600
+  tiktok:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/tiktok.yaml"
+    path: ./ruleset/tiktok.yaml
+    interval: 3600
+  nf:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/nf.yaml"
+    path: ./ruleset/nf.yaml
+    interval: 3600
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/gfw.yaml"
+    path: ./ruleset/gfw.yaml
+    interval: 3600
+  greatfire:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/greatfire.yaml"
+    path: ./ruleset/greatfire.yaml
+    interval: 3600
+  proxy:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/proxy.yaml"
+    path: ./ruleset/proxy.yaml
+    interval: 3600
+  microsoft:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/microsoft.yaml"
+    path: ./ruleset/microsoft.yaml
+    interval: 3600
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/lancidr.yaml"
+    path: ./ruleset/lancidr.yaml
+    interval: 3600
+  private:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/private.yaml"
+    path: ./ruleset/private.yaml
+    interval: 3600
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/cncidr.yaml"
+    path: ./ruleset/cncidr.yaml
+    interval: 3600
+  xiaohongshu:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/xiaohongshu.yaml"
+    path: ./ruleset/xiaohongshu.yaml
+    interval: 3600
+  bilibili:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/bilibili.yaml"
+    path: ./ruleset/bilibili.yaml
+    interval: 3600
+  ximalaya:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/ximalaya.yaml"
+    path: ./ruleset/ximalaya.yaml
+    interval: 3600
+  kuaishou:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/kuaishou.yaml"
+    path: ./ruleset/kuaishou.yaml
+    interval: 3600
+rules:
+  - IP-CIDR,223.5.5.5/32,DIRECT,no-resolve
+  - IP-CIDR,223.6.6.6/32,DIRECT,no-resolve
+  - IP-CIDR,119.29.29.29/32,DIRECT,no-resolve
+  - IP-CIDR,1.12.12.12/32,DIRECT,no-resolve
+  - IP-CIDR,120.53.53.53/32,DIRECT,no-resolve
+  - IP-CIDR,1.1.1.1/32,🚀 节点选择,no-resolve
+  - IP-CIDR,1.0.0.1/32,🚀 节点选择,no-resolve
+  - IP-CIDR,8.8.8.8/32,🚀 节点选择,no-resolve
+  - IP-CIDR,8.8.4.4/32,🚀 节点选择,no-resolve
+  - IP-CIDR,101.101.101.101/32,🚀 节点选择,no-resolve
+  - DOMAIN,dns.alidns.com,DIRECT
+  - DOMAIN,doh.pub,DIRECT
+  - DOMAIN-SUFFIX,msftconnecttest.com,🚀 节点选择
+  - DOMAIN-SUFFIX,msftncsi.com,🚀 节点选择
+  - DOMAIN,dns.cloudflare.com,🚀 节点选择
+  - DOMAIN,cloudflare-dns.com,🚀 节点选择
+  - DOMAIN,dns.google,🚀 节点选择
+  - DOMAIN,doh.opendns.com,🚀 节点选择
+  - DOMAIN,hk-hkg.doh.sb,🚀 节点选择
+  - DOMAIN,doh.opendns.com,🚀 节点选择
+  - DOMAIN,dns.quad9.net,🚀 节点选择
+  - DOMAIN,dns.twnic.tw,🚀 节点选择
+  - RULE-SET,allow-cn,DIRECT
+  - RULE-SET,allow-us,🚀 节点选择
+  - RULE-SET,reject,REJECT
+  - RULE-SET,rejectDiy,REJECT
+  - RULE-SET,xiaohongshu,REJECT
+  - RULE-SET,iphone,🍎 苹果服务
+  - RULE-SET,apple,🍎 苹果服务
+  - RULE-SET,icloud,🍎 苹果服务
+  - RULE-SET,porn,🈲 Porn
+  - RULE-SET,download,⏬ 下载节点
+  - RULE-SET,telegram,⏬ 下载节点
+  - RULE-SET,microsoft,⏬ 下载节点
+  - RULE-SET,tiktok,🎵 Tiktok
+  - RULE-SET,nf,📺 Netflix
+  - RULE-SET,gfw,🚀 节点选择
+  - RULE-SET,greatfire,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,bilibili,📺 B站
+  - RULE-SET,ximalaya,📺 B站
+  - RULE-SET,kuaishou,📺 B站
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - GEOIP,CN,DIRECT,no-resolve
+  - MATCH,🚀 节点选择

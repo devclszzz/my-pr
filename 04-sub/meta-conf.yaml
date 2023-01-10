@@ -2,7 +2,7 @@ fallback-filter:
   geoip: true
   geoip-code: CN
   geosite:
-    - !cn
+    - geolocation-!cn
     - gfw
   ipcidr:
     - 0.0.0.0/8
