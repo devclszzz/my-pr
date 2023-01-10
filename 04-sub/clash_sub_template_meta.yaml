@@ -35,15 +35,15 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   fallback:
-    - 'https://8.8.8.8/dns-query#♻️ 自动选择'
-    - 'https://8.8.4.4/dns-query#♻️ 自动选择'
-    - 'https://dns.google/dns-query#♻️ 自动选择'
-    - 'https://101.101.101.101/dns-query#♻️ 自动选择'
-    - 'https://dns.twnic.tw/dns-query#♻️ 自动选择'
-    - 'https://public.dns.iij.jp/dns-query#♻️ 自动选择'
-    - 'https://dns.cloudflare.com/dns-query#♻️ 自动选择'
-    - 'https://1.1.1.1/dns-query#♻️ 自动选择'
-    - 'https://1.0.0.1/dns-query#♻️ 自动选择'
+    - 'https://8.8.8.8/dns-query#🚀 节点选择'
+    - 'https://8.8.4.4/dns-query#🚀 节点选择'
+    - 'https://dns.google/dns-query#🚀 节点选择'
+    - 'https://101.101.101.101/dns-query#🚀 节点选择'
+    - 'https://dns.twnic.tw/dns-query#🚀 节点选择'
+    - 'https://public.dns.iij.jp/dns-query#🚀 节点选择'
+    - 'https://dns.cloudflare.com/dns-query#🚀 节点选择'
+    - 'https://1.1.1.1/dns-query#🚀 节点选择'
+    - 'https://1.0.0.1/dns-query#🚀 节点选择'
   fake-ip-filter:
     - "*.lan"
     - stun.*.*.*
@@ -123,29 +123,7 @@ dns:
       - "gfw"
       - "geolocation-!cn"
     ipcidr:
-      - 0.0.0.0/8
-      - 10.0.0.0/8
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 169.254.0.0/16
-      - 172.16.0.0/12
-      - 192.0.0.0/24
-      - 192.0.2.0/24
-      - 192.88.99.0/24
-      - 192.168.0.0/16
-      - 198.18.0.0/15
-      - 198.51.100.0/24
-      - 203.0.113.0/24
-      - 224.0.0.0/4
       - 240.0.0.0/4
-      - 255.255.255.255/32
-      - 8.8.8.8/32
-      - 8.8.4.4/32
-      - 1.1.1.1/32
-      - 1.0.0.1/32
-      - 9.9.9.9/32
-      - 4.2.2.1/32
-      - 101.101.101.101/32
     domain:
       - "+.dns.nextdns.io"
       - "+.hk-hkg.doh.sb"
