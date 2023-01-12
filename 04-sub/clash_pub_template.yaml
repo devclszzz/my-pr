@@ -27754,11 +27754,11 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🇭🇰 香港
-      - 🛫 极速下载
-      - 🚑 备用节点
       - 🇯🇵 日本
       - 🇸🇬 新加坡
       - 🇺🇸 美国
+      - 🛫 极速下载
+      - 🚑 备用节点
       - DIRECT
   - name: ♻️ 自动选择
     type: fallback
@@ -27782,20 +27782,6 @@ proxy-groups:
     tolerance: 8000
     proxies: [ ]
   - name: 🇹🇼 台湾
-    type: url-test
-    url: https://www.google.com
-    interval: 60
-    lazy: true
-    tolerance: 8000
-    proxies: [ ]
-  - name: 🛫 极速下载
-    type: url-test
-    url: https://www.google.com
-    interval: 60
-    lazy: true
-    tolerance: 8000
-    proxies: [ ]
-  - name: 🚑 备用节点
     type: url-test
     url: https://www.google.com
     interval: 60
@@ -27828,6 +27814,20 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - DIRECT
+  - name: 🛫 极速下载
+    type: url-test
+    url: https://www.google.com
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
+  - name: 🚑 备用节点
+    type: url-test
+    url: https://www.google.com
+    interval: 60
+    lazy: true
+    tolerance: 8000
+    proxies: [ ]
   - name: 🎵 Tiktok
     type: fallback
     url: https://www.google.com
