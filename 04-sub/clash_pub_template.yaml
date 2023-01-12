@@ -27809,11 +27809,6 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - DIRECT
   - name: 🛫 极速下载
     type: url-test
     url: https://www.google.com
@@ -27828,6 +27823,11 @@ proxy-groups:
     lazy: true
     tolerance: 8000
     proxies: [ ]
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - DIRECT
   - name: 🎵 Tiktok
     type: fallback
     url: https://www.google.com
