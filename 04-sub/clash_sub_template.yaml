@@ -27857,19 +27857,24 @@ proxy-groups:
     interval: 60
     lazy: true
     proxies:
-      - 😁 次节点
-      - 🛫 极速下载
       - ⛳ 低倍率节点
-      - 😁 主节点
+      - 🛫 极速下载
+      - 🚑 备用节点
+      - 😁 次节点
       - 🇭🇰 香港
       - 🇹🇼 台湾
-      - 🚑 备用节点
+      - 🇯🇵 日本
+      - 🇸🇬 新加坡
+      - 🇺🇸 美国
   - name: 🍎 苹果服务
     type: fallback
     url: https://www.google.com
     interval: 60
     lazy: true
     proxies:
+      - 😁 次节点
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
       - ⏬ 下载节点
       - DIRECT
   - name: 🎵 Tiktok
