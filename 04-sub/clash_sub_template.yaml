@@ -27753,11 +27753,15 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - 😁 主节点
       - 🇭🇰 香港
+      - 😁 次节点
       - 🇹🇼 台湾
       - 🇯🇵 日本
       - 🇸🇬 新加坡
-      - 🇺🇸 美国
+      - 🛫 极速下载
+      - 🚑 备用节点
+      - 🚒 流量包节点
       - DIRECT
   - name: ♻️ 自动选择
     type: fallback
