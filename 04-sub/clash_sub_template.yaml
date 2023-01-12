@@ -27873,8 +27873,6 @@ proxy-groups:
     lazy: true
     proxies:
       - 😁 次节点
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
       - ⏬ 下载节点
       - DIRECT
   - name: 🎵 Tiktok
