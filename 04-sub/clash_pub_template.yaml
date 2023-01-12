@@ -27865,6 +27865,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/reject.yaml
     interval: 3600
+  ad:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
+    path: ./ruleset/ad.yaml
+    interval: 3600
   iphone:
     type: http
     behavior: classical
@@ -27947,6 +27953,7 @@ rules:
   - DOMAIN,dns.quad9.net,🚀 节点选择
   - DOMAIN,dns.twnic.tw,🚀 节点选择
   - RULE-SET,reject,REJECT
+  - RULE-SET,ad,REJECT
   - RULE-SET,iphone,🍎 苹果服务
   - RULE-SET,tiktok,🎵 Tiktok
   - RULE-SET,nf,📺 Netflix

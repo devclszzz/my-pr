@@ -27920,6 +27920,12 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/reject.yaml"
     path: ./ruleset/reject.yaml
     interval: 3600
+  adLite:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/devclszzz/my-pr/01-rule/adLite.yaml"
+    path: ./ruleset/adLite.yaml
+    interval: 60
   rejectDiy:
     type: http
     behavior: classical
@@ -28078,6 +28084,7 @@ rules:
   - RULE-SET,allow-cn,DIRECT
   - RULE-SET,allow-us,🚀 节点选择
   - RULE-SET,reject,REJECT
+  - RULE-SET,adLite,REJECT
   - RULE-SET,rejectDiy,REJECT
   - RULE-SET,xiaohongshu,REJECT
   - RULE-SET,iphone,🍎 苹果服务
